@@ -1,0 +1,173 @@
+//TYPOGRAPHY
+
+//-------------------DESKTOP-----------------//
+@mixin h1-desktop {
+  font-size: $fz-h1-desktop;
+  line-height: $lh-h1-desktop;
+}
+
+@mixin h2-desktop {
+  font-size: $fz-h2-desktop;
+  line-height: $lh-h2-desktop;
+}
+
+@mixin h3-desktop {
+  font-size: $fz-h3-desktop;
+  line-height: $lh-h3-desktop;
+}
+
+@mixin h4-desktop {
+  font-size: $fz-h4-desktop;
+  line-height: $lh-h4-desktop;
+}
+
+@mixin text-big-desktop {
+  font-size: $fz-big-desktop;
+  line-height: $lh-big-desktop;
+}
+
+@mixin text-medium-desktop {
+  font-size: $fz-medium-desktop;
+  line-height: $lh-medium-desktop;
+}
+
+@mixin text-regular-desktop {
+  font-size: $fz-default-desktop;
+  line-height: $lh-default-desktop;
+}
+
+@mixin text-small-desktop {
+  font-size: $fz-default-desktop;
+  line-height: $lh-small-desktop;
+  font-weight: $fw-light;
+}
+
+@mixin text-xsmall-desktop {
+  font-size: $fz-small-desktop;
+  line-height: $lh-xsmall-desktop;
+}
+
+@mixin text-xxsmall-desktop {
+  font-size: $fz-xsmall-desktop;
+  line-height: $lh-xxsmall-desktop;
+}
+
+@mixin text-button-desktop {
+  font-size: $fz-small-desktop;
+  line-height: $fz-small-desktop;
+  font-weight: $fw-medium;
+  letter-spacing: 2%;
+  text-transform: uppercase;
+}
+
+//-------------------TABLET-----------------//
+
+@mixin h1-tablet {
+  font-size: $fz-h1-tablet;
+  line-height: $lh-h1-tablet;
+}
+
+@mixin h2-tablet {
+  font-size: $fz-h2-tablet;
+  line-height: $lh-h2-tablet;
+}
+
+@mixin h3-tablet {
+  font-size: $fz-h3-tablet;
+  line-height: $lh-h3-tablet;
+}
+
+@mixin h4-tablet {
+  font-size: $fz-h4-tablet;
+  line-height: $lh-h4-tablet;
+}
+
+@mixin text-big-tablet {
+  font-size: $fz-big-tablet;
+  line-height: $lh-big-tablet;
+}
+
+@mixin text-medium-tablet {
+  font-size: $fz-default-tablet;
+  line-height: $lh-big-tablet;
+}
+
+@mixin text-regular-tablet {
+  font-size: $fz-default-tablet;
+  line-height: $lh-default-tablet;
+}
+
+@mixin text-small-tablet {
+  font-size: $fz-default-tablet;
+  line-height: $lh-default-tablet;
+  font-weight: $fw-light;
+}
+
+@mixin text-xsmall-tablet {
+  font-size: $fz-small-tablet;
+  line-height: $lh-default-tablet;
+}
+
+@mixin text-xxsmall-tablet {
+  font-size: $fz-xsmall-tablet;
+  line-height: $lh-small-tablet;
+}
+
+@mixin text-button-tablet {
+  font-size: $fz-small-tablet;
+  line-height: $fz-small-tablet;
+  font-weight: $fw-medium;
+  letter-spacing: 2%;
+  text-transform: uppercase;
+}
+
+//-------------------MOBILE-----------------//
+
+@mixin h1-mobile {
+  font-size: $fz-h1-mobile;
+  line-height: $lh-h1-mobile;
+}
+
+@mixin h2-mobile {
+  font-size: $fz-h2-mobile;
+  line-height: $lh-h2-mobile;
+}
+
+@mixin h3-mobile {
+  font-size: $fz-h3-mobile;
+  line-height: $lh-h3-mobile;
+}
+
+@mixin h4-mobile {
+  font-size: $fz-h4-mobile;
+  line-height: $lh-h4-mobile;
+}
+
+@mixin text-big-mobile {
+  font-size: $fz-big-mobile;
+  line-height: $lh-big-mobile;
+}
+
+@mixin text-regular-mobile {
+  font-size: $fz-default-mobile;
+  line-height: $lh-default-mobile;
+}
+
+@mixin text-small-mobile {
+  font-size: $fz-default-mobile;
+  line-height: $lh-default-mobile;
+  font-weight: $fw-light;
+}
+
+@mixin text-xsmall-mobile {
+  font-size: $fz-small-mobile;
+  line-height: $lh-small-mobile;
+}
+
+@mixin text-button-mobile {
+  font-size: $fz-small-mobile;
+  line-height: $fz-small-mobile;
+  font-weight: $fw-medium;
+  letter-spacing: 2%;
+  text-transform: uppercase;
+}

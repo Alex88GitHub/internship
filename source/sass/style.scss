@@ -2,3 +2,14 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
+//Global
+// ----------------------------------
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+
+//Blocks
+//---------------------------------
+@import "blocks/slider";

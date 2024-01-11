@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+html {
+  font-style: normal;
+  font-weight: $fw-regular;
+  font-size: $fz-default-desktop;
+  line-height: $lh-default-desktop;
+  font-family: $ff-placeholder;
+  // color: $color-default-black;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+
+  // background-color: $color-default-white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+a {
+  display: block;
+  // color: $color-default-black;
+  text-decoration: none;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
