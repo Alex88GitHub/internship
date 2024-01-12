@@ -1,3 +1,12 @@
+//colors
+$color-default-black:     #484848;
+$color-default-white:     #ffffff;
+
+$color-alabaster:         #f0efe9;
+$color-mischka:           #a9afb7;
+$color-cerulian-blue:     #316dc2;
+$color-endeavour:         #275699;
+
 //font-family
 $ff-placeholder: "Manrope", "Arial", sans-serif;
 
@@ -77,3 +86,7 @@ $lh-h4-mobile: 18px;
 $lh-big-mobile: 22px;
 $lh-default-mobile: 20px;
 $lh-small-mobile: 14px;
+
+//Breakpoints
+$vp-1440: 1440px;
+$vp-768: 768px;

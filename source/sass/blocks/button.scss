@@ -1,0 +1,11 @@
+.button {
+  padding: 13px;
+  background-color: $color-cerulian-blue;
+  border: none;
+  border-radius: 50%;
+}
+
+.button svg {
+  display: block;
+  color: $color-default-white;
+}

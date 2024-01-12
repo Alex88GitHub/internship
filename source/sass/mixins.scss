@@ -56,7 +56,7 @@
   font-size: $fz-small-desktop;
   line-height: $fz-small-desktop;
   font-weight: $fw-medium;
-  letter-spacing: 2%;
+  letter-spacing: 0.28px;
   text-transform: uppercase;
 }
 
@@ -117,7 +117,7 @@
   font-size: $fz-small-tablet;
   line-height: $fz-small-tablet;
   font-weight: $fw-medium;
-  letter-spacing: 2%;
+  letter-spacing: 0.28px;
   text-transform: uppercase;
 }
 
@@ -168,6 +168,18 @@
   font-size: $fz-small-mobile;
   line-height: $fz-small-mobile;
   font-weight: $fw-medium;
-  letter-spacing: 2%;
+  letter-spacing: 0.28px;
   text-transform: uppercase;
+}
+
+@mixin vp-1439 {
+  @media (max-width: ($vp-1440 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-767 {
+  @media (max-width: ($vp-768 - 1px)) {
+    @content;
+  }
 }

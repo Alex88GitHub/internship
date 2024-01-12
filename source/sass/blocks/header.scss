@@ -1,0 +1,36 @@
+.header {
+
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.header__logo {
+  padding: 10px;
+  background-color: $color-default-white;
+  border-radius: 50%;
+}
+
+.header__logo svg {
+  display: block;
+  color: $color-cerulian-blue;
+}
+
+.header__button-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 4px 4px 4px 20px;
+  background-color: $color-default-white;
+  border: 1px solid $color-cerulian-blue;
+  border-radius: 30px;
+}
+
+.header__button-wrapper span {
+  @include text-button-desktop;
+  color: $color-cerulian-blue;
+}

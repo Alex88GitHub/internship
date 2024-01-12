@@ -10,16 +10,41 @@
 </head>
 
 <body>
-  <div class="slider__title" data-test="slider">slider</div>
-  <div data-test="about">about</div>
-  <div data-test="programs">programs</div>
-  <div data-test="grant">grant</div>
-  <div data-test="news">news</div>
-  <div data-test="FAQ">FAQ</div>
-  <div data-test="reviews">reviews</div>
-  <div data-test="contacts">contacts</div>
-  <div data-test="form">form</div>
-  <div data-test="footer">footer</div>
+  <div class="wrapper">
+
+    <header class="header" data-test="slider">
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__logo" href="">
+            <svg width="30" height="30" role="img">
+              <use href="__spritemap#sprite-logo"></use>
+            </svg>
+          </a>
+          <div class="header__button-wrapper">
+            <span class="header__button-text">Меню</span>
+            <button class="header__button button" type="button">
+              <svg width="20" height="20" role="img">
+                <use href="__spritemap#sprite-menu-icon"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+
+
+      <!-- <div data-test="about">about</div>
+      <div data-test="programs">programs</div>
+      <div data-test="grant">grant</div>
+      <div data-test="news">news</div>
+      <div data-test="FAQ">FAQ</div>
+      <div data-test="reviews">reviews</div>
+      <div data-test="contacts">contacts</div>
+      <div data-test="form">form</div> -->
+    </main>
+    <!-- <div data-test="footer">footer</div> -->
+  </div>
   <script type="module" src="js/main.js"></script>
 </body>
 
