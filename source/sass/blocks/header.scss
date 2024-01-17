@@ -1,8 +1,13 @@
 .header {
-
+  position: relative;
 }
 
 .header__wrapper {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 100px;
+  width: calc(100% - 200px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,4 +38,10 @@
 .header__button-wrapper span {
   @include text-button-desktop;
   color: $color-cerulian-blue;
+}
+
+.header__nav {
+  position: absolute;
+  right: 0;
+  top: 60px;
 }

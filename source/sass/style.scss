@@ -2,12 +2,13 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+// @import "../../node_modules/swiper/swiper-bundle";
 
 //Global
 // ----------------------------------
+@import "global/fonts";
 @import "variables";
 @import "mixins";
-@import "global/fonts";
 @import "global/reboot";
 @import "global/container";
 
@@ -15,4 +16,9 @@
 //---------------------------------
 @import "blocks/button";
 @import "blocks/header";
-@import "blocks/slider";
+@import "blocks/sub-menu-item";
+@import "blocks/sub-menu";
+@import "blocks/menu-item";
+@import "blocks/menu-list";
+@import "blocks/menu-nav";
+@import "blocks/hero";

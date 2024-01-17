@@ -1,0 +1,12 @@
+.sub-menu-item {
+  padding-left: 16px;
+  text-transform: none;
+  list-style: none;
+}
+
+.sub-menu-item__link {
+  font-size: $fz-default-desktop;
+  line-height: $fz-default-desktop;
+  letter-spacing: 0.32px;
+  color: $color-white-60;
+}

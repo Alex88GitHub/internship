@@ -7,29 +7,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Internship programs</title>
   <link rel="stylesheet" href="sass/style.scss">
+  <link rel="preload" href="fonts/manrope-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/manrope-v15-latin-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/manrope-v15-latin-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body>
   <div class="wrapper">
 
     <header class="header" data-test="slider">
-      <div class="container">
-        <div class="header__wrapper">
-          <a class="header__logo" href="">
-            <svg width="30" height="30" role="img">
-              <use href="__spritemap#sprite-logo"></use>
+      <!-- <div class="container"> -->
+      <div class="header__wrapper">
+        <a class="header__logo" href="">
+          <svg width="30" height="30" role="img">
+            <use href="__spritemap#sprite-logo"></use>
+          </svg>
+        </a>
+        <div class="header__button-wrapper">
+          <span class="header__button-text">Меню</span>
+          <button class="header__button button" type="button">
+            <svg width="20" height="20" role="img">
+              <use href="__spritemap#sprite-menu-icon"></use>
             </svg>
-          </a>
-          <div class="header__button-wrapper">
-            <span class="header__button-text">Меню</span>
-            <button class="header__button button" type="button">
-              <svg width="20" height="20" role="img">
-                <use href="__spritemap#sprite-menu-icon"></use>
-              </svg>
-            </button>
+          </button>
+        </div>
+        <nav class="header__nav menu-nav">
+          <ul class="menu-nav__list menu-list">
+            <li class="menu-list__item menu-item">
+              <a class="menu-item__link" href="">О проекте</a>
+            </li>
+            <li class="menu-list__item menu-item">
+              Программы
+              <ul class="menu-item__sub-menu sub-menu">
+                <li class="sub-menu__item sub-menu-item">
+                  <a class="sub-menu-item__link" href="">Стажировки</a>
+                </li>
+                <li class="sub-menu__item sub-menu-item">
+                  <a class="sub-menu-item__link" href="">Волонтёрство</a>
+                </li>
+                <li class="sub-menu__item sub-menu-item">
+                  <a class="sub-menu-item__link" href="">Учёба</a>
+                </li>
+                <li class="sub-menu__item sub-menu-item">
+                  <a class="sub-menu-item__link" href="">Религия</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-list__item menu-item">
+              <a class="menu-item__link" href="">Как поехать</a>
+            </li>
+            <li class="menu-list__item menu-item">
+              <a class="menu-item__link" href="">Отзывы</a>
+            </li>
+            <li class="menu-list__item menu-item">
+              Новости
+              <ul class="menu-item__sub-menu sub-menu">
+                <li class="sub-menu__item sub-menu-item">
+                  <a class="sub-menu-item__link" href="">Общее</a>
+                </li>
+                <li class="sub-menu__item sub-menu-item">
+                  <a class="sub-menu-item__link" href="">Волонтёрство</a>
+                </li>
+                <li class="sub-menu__item sub-menu-item">
+                  <a class="sub-menu-item__link" href="">Стажировки</a>
+                </li>
+                <li class="sub-menu__item sub-menu-item">
+                  <a class="sub-menu-item__link" href="">Карьера</a>
+                </li>
+                <li class="sub-menu__item sub-menu-item">
+                  <a class="sub-menu-item__link" href="">Путешествия</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-list__item menu-item">
+              <a class="menu-item__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="hero swiper">
+        <div class="hero__slider-wrapper swiper-wrapper">
+          <div class="hero__slide swiper-slide">
+            <div class="hero__content-wrapper">
+              <h1>Глобальный профессиональный опыт обучения за рубежом</h1>
+              <div class="hero__text-wrapper">
+                <p>Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий
+                  студенческий стиль жизни!</p>
+                <div class="hero__button-wrapper">
+                  <span class="hero__button-text">Подробнее</span>
+                  <button class="hero__button button button--hero" type="button">
+                    <svg width="8" height="8" role="img">
+                      <use href="__spritemap#sprite-arrow-button-icon"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="hero__image-wrapper">
+              <img src="img/hero-desktop-1.jpg" srcset="img/hero-desktop-1@2x.jpg 2x" width="1440" height="800" alt="">
+            </div>
+          </div>
+          <div class="hero__slide swiper-slide">
+            <div class="hero__content-wrapper">
+              <h1>Волонтёрские программы – внесите свой вклад в общество</h1>
+              <div class="hero__text-wrapper">
+                <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.
+                </p>
+                <div class="hero__button-wrapper">
+                  <span class="hero__button-text">Подробнее</span>
+                  <button class="hero__button button button--hero" type="button">
+                    <svg width="8" height="8" role="img">
+                      <use href="__spritemap#sprite-arrow-button-icon"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="hero__image-wrapper">
+              <img src="img/hero-desktop-2.jpg" srcset="img/hero-desktop-2@2x.jpg 2x" width="1440" height="800" alt="">
+            </div>
+          </div>
+          <div class="hero__slide swiper-slide">
+            <div class="hero__content-wrapper">
+              <h1>Программы стажировок в крупнейших компаниях мира</h1>
+              <div class="hero__text-wrapper">
+                <p>Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.</p>
+                <div class="hero__button-wrapper">
+                  <span class="hero__button-text">Подробнее</span>
+                  <button class="hero__button button button--hero" type="button">
+                    <svg width="8" height="8" role="img">
+                      <use href="__spritemap#sprite-arrow-button-icon"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="hero__image-wrapper">
+              <img src="img/hero-desktop-3.jpg" srcset="img/hero-desktop-3@2x.jpg 2x" width="1440" height="800" alt="">
+            </div>
           </div>
         </div>
-      </div>
+        <div class="swiper-pagination"></div>
+        <!-- </div> -->
     </header>
     <main>
 
