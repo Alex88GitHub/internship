@@ -15,7 +15,7 @@ const onEscKeyDown = (evt) => {
   }
 };
 
-const onLinkElementClick = () => {
+const onElementClick = () => {
   closeMenu();
 };
 
@@ -26,8 +26,9 @@ const openMenu = () => {
   overlayElement.style.display = 'block';
   document.addEventListener('keydown', onEscKeyDown);
   linkElement.forEach((link) => {
-    link.addEventListener('click', onLinkElementClick);
+    link.addEventListener('click', onElementClick);
   });
+  overlayElement.addEventListener('click', onElementClick);
   // window.scrollLock.disableScrolling();
   // bodyElement.style.overflow = 'hidden';
 };
@@ -38,8 +39,9 @@ function closeMenu() {
   buttonImageElement.setAttribute('href', '__spritemap#sprite-menu-icon');
   overlayElement.style.display = 'none';
   linkElement.forEach((link) => {
-    link.removeEventListener('click', onLinkElementClick);
+    link.removeEventListener('click', onElementClick);
   });
+  overlayElement.removeEventListener('click', onElementClick);
 }
 
 export const initBurgerMenu = () => {

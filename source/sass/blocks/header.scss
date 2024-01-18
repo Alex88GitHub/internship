@@ -15,7 +15,6 @@
 
 .header__wrapper {
   position: absolute;
-  z-index: 2;
   top: 0;
   left: 100px;
   width: calc(100% - 200px);
@@ -26,6 +25,8 @@
 }
 
 .header__logo {
+  position: relative;
+  z-index: 1;
   padding: 10px;
   background-color: $color-default-white;
   border-radius: 50%;
@@ -37,7 +38,8 @@
 }
 
 .header__button {
-
+  position: relative;
+  z-index: 2;
 }
 
 .header__button span {
@@ -47,6 +49,7 @@
 
 .header__nav {
   position: absolute;
+  z-index: 2;
   right: 0;
   top: 60px;
 }

@@ -33,13 +33,18 @@
           </div>
         </button>
         <nav class="header__nav menu-nav" data-menu="burger-menu">
-          <ul class="menu-nav__list menu-list">
+          <ul class="menu-nav__list menu-list" data-accordion="parent">
             <li class="menu-list__item menu-item">
               <a class="menu-item__link" href="#" data-menu="link">О проекте</a>
             </li>
-            <li class="menu-list__item menu-item">
-              Программы
-              <ul class="menu-item__sub-menu sub-menu">
+            <li class="menu-list__item menu-item" data-accordion="element">
+              <a class="menu-item__link" href="#" data-accordion="button">
+                <span>Программы</span>
+                <svg width="12" height="12" role="img">
+                  <use href="__spritemap#sprite-arrow-down-icon"></use>
+                </svg>
+              </a>
+              <ul class="menu-item__sub-menu sub-menu" data-accordion="content">
                 <li class="sub-menu__item sub-menu-item">
                   <a class="sub-menu-item__link" href="#" data-menu="link">Стажировки</a>
                 </li>
@@ -60,9 +65,14 @@
             <li class="menu-list__item menu-item">
               <a class="menu-item__link" href="#" data-menu="link">Отзывы</a>
             </li>
-            <li class="menu-list__item menu-item">
-              Новости
-              <ul class="menu-item__sub-menu sub-menu">
+            <li class="menu-list__item menu-item" data-accordion="element">
+              <a class="menu-item__link" href="#" data-accordion="button">
+                <span>Новости</span>
+                <svg width="12" height="12" role="img">
+                  <use href="__spritemap#sprite-arrow-down-icon"></use>
+                </svg>
+              </a>
+              <ul class="menu-item__sub-menu sub-menu" data-accordion="content">
                 <li class="sub-menu__item sub-menu-item">
                   <a class="sub-menu-item__link" href="#" data-menu="link">Общее</a>
                 </li>

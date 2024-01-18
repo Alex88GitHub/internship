@@ -1,13 +1,20 @@
 .menu-item {
-  font-size: $fz-default-desktop;
-  line-height: $fz-default-desktop;
-  letter-spacing: 0.32px;
-  color: $color-white-70;
-  text-transform: uppercase;
   list-style: none;
 }
 
+.menu-item svg {
+  color: $color-white-70;
+}
+
+.menu-item.is-active svg {
+  color: $color-default-white;
+  rotate: 180deg;
+}
+
 .menu-item__link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
   font-size: $fz-default-desktop;
   line-height: $fz-default-desktop;
   letter-spacing: 0.32px;
@@ -15,6 +22,8 @@
   text-transform: uppercase;
 }
 
-.menu-item__sub-menu {
-  margin-top: 20px;
+.menu-item__link.is-active {
+  margin-bottom: 20px;
+  color: $color-default-white;
+  font-weight: $fw-medium;
 }
