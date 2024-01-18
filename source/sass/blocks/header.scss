@@ -2,6 +2,17 @@
   position: relative;
 }
 
+.header__overlay {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-black-pearl-40;
+}
+
 .header__wrapper {
   position: absolute;
   z-index: 2;
@@ -25,17 +36,11 @@
   color: $color-cerulian-blue;
 }
 
-.header__button-wrapper {
-  display: inline-flex;
-  align-items: center;
-  gap: 20px;
-  padding: 4px 4px 4px 20px;
-  background-color: $color-default-white;
-  border: 1px solid $color-cerulian-blue;
-  border-radius: 30px;
+.header__button {
+
 }
 
-.header__button-wrapper span {
+.header__button span {
   @include text-button-desktop;
   color: $color-cerulian-blue;
 }

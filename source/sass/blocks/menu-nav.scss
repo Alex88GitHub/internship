@@ -1,4 +1,9 @@
 .menu-nav {
+  display: none;
+}
+
+.menu-nav.is-open {
+  display: block;
   width: 290px;
   padding: 35px 25px;
   border-radius: 16px;

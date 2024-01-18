@@ -1,9 +1,11 @@
 //colors
+$color-transparent:       rgba(255, 255, 255, 0);
 $color-default-black:     #484848;
 $color-default-white:     #ffffff;
+
 $color-white-70:          rgba($color: $color-default-white, $alpha: 0.7);
 $color-white-60:          rgba($color: $color-default-white, $alpha: 0.6);
-
+$color-black-pearl-40:    rgba($color: #0d1d33, $alpha: 0.4);
 $color-alabaster:         #f0efe9;
 $color-mischka:           #a9afb7;
 $color-cerulian-blue:     #316dc2;

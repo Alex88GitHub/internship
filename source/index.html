@@ -16,6 +16,7 @@
   <div class="wrapper">
 
     <header class="header" data-test="slider">
+      <div class="header__overlay" data-overlay></div>
       <!-- <div class="container"> -->
       <div class="header__wrapper">
         <a class="header__logo" href="">
@@ -23,64 +24,64 @@
             <use href="__spritemap#sprite-logo"></use>
           </svg>
         </a>
-        <div class="header__button-wrapper">
+        <button class="header__button button" type="button" data-menu="button">
           <span class="header__button-text">Меню</span>
-          <button class="header__button button" type="button">
+          <div class="button__icon">
             <svg width="20" height="20" role="img">
               <use href="__spritemap#sprite-menu-icon"></use>
             </svg>
-          </button>
-        </div>
-        <nav class="header__nav menu-nav">
+          </div>
+        </button>
+        <nav class="header__nav menu-nav" data-menu="burger-menu">
           <ul class="menu-nav__list menu-list">
             <li class="menu-list__item menu-item">
-              <a class="menu-item__link" href="">О проекте</a>
+              <a class="menu-item__link" href="#" data-menu="link">О проекте</a>
             </li>
             <li class="menu-list__item menu-item">
               Программы
               <ul class="menu-item__sub-menu sub-menu">
                 <li class="sub-menu__item sub-menu-item">
-                  <a class="sub-menu-item__link" href="">Стажировки</a>
+                  <a class="sub-menu-item__link" href="#" data-menu="link">Стажировки</a>
                 </li>
                 <li class="sub-menu__item sub-menu-item">
-                  <a class="sub-menu-item__link" href="">Волонтёрство</a>
+                  <a class="sub-menu-item__link" href="#" data-menu="link">Волонтёрство</a>
                 </li>
                 <li class="sub-menu__item sub-menu-item">
-                  <a class="sub-menu-item__link" href="">Учёба</a>
+                  <a class="sub-menu-item__link" href="#" data-menu="link">Учёба</a>
                 </li>
                 <li class="sub-menu__item sub-menu-item">
-                  <a class="sub-menu-item__link" href="">Религия</a>
+                  <a class="sub-menu-item__link" href="#" data-menu="link">Религия</a>
                 </li>
               </ul>
             </li>
             <li class="menu-list__item menu-item">
-              <a class="menu-item__link" href="">Как поехать</a>
+              <a class="menu-item__link" href="#" data-menu="link">Как поехать</a>
             </li>
             <li class="menu-list__item menu-item">
-              <a class="menu-item__link" href="">Отзывы</a>
+              <a class="menu-item__link" href="#" data-menu="link">Отзывы</a>
             </li>
             <li class="menu-list__item menu-item">
               Новости
               <ul class="menu-item__sub-menu sub-menu">
                 <li class="sub-menu__item sub-menu-item">
-                  <a class="sub-menu-item__link" href="">Общее</a>
+                  <a class="sub-menu-item__link" href="#" data-menu="link">Общее</a>
                 </li>
                 <li class="sub-menu__item sub-menu-item">
-                  <a class="sub-menu-item__link" href="">Волонтёрство</a>
+                  <a class="sub-menu-item__link" href="#" data-menu="link">Волонтёрство</a>
                 </li>
                 <li class="sub-menu__item sub-menu-item">
-                  <a class="sub-menu-item__link" href="">Стажировки</a>
+                  <a class="sub-menu-item__link" href="#" data-menu="link">Стажировки</a>
                 </li>
                 <li class="sub-menu__item sub-menu-item">
-                  <a class="sub-menu-item__link" href="">Карьера</a>
+                  <a class="sub-menu-item__link" href="#" data-menu="link">Карьера</a>
                 </li>
                 <li class="sub-menu__item sub-menu-item">
-                  <a class="sub-menu-item__link" href="">Путешествия</a>
+                  <a class="sub-menu-item__link" href="#" data-menu="link">Путешествия</a>
                 </li>
               </ul>
             </li>
             <li class="menu-list__item menu-item">
-              <a class="menu-item__link" href="">Контакты</a>
+              <a class="menu-item__link" href="#" data-menu="link">Контакты</a>
             </li>
           </ul>
         </nav>
