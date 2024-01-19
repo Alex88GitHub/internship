@@ -11,6 +11,7 @@
   width: 100vw;
   height: 100vh;
   background-color: $color-black-pearl-40;
+  cursor: pointer;
 }
 
 .header__wrapper {
@@ -42,7 +43,7 @@
   z-index: 2;
 }
 
-.header__button span {
+.header__button-text {
   @include text-button-desktop;
   color: $color-cerulian-blue;
 }

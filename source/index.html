@@ -97,61 +97,70 @@
         </nav>
       </div>
 
-      <div class="hero swiper">
+      <div class="hero swiper" data-slider="hero-slider">
         <div class="hero__slider-wrapper swiper-wrapper">
-          <div class="hero__slide swiper-slide">
+          <div class="hero__slide swiper-slide" data-slider="hero-slide">
             <div class="hero__content-wrapper">
               <h1>Глобальный профессиональный опыт обучения за рубежом</h1>
               <div class="hero__text-wrapper">
                 <p>Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий
                   студенческий стиль жизни!</p>
-                <div class="hero__button-wrapper">
+                <button class="hero__button button" type="button">
                   <span class="hero__button-text">Подробнее</span>
-                  <button class="hero__button button button--hero" type="button">
+                  <div class="button__icon button__icon--hero">
                     <svg width="8" height="8" role="img">
                       <use href="__spritemap#sprite-arrow-button-icon"></use>
                     </svg>
-                  </button>
-                </div>
+                  </div>
+                </button>
+                <svg width="26" height="26" role="img">
+                  <use href="__spritemap#sprite-angle-right-top"></use>
+                </svg>
               </div>
             </div>
             <div class="hero__image-wrapper">
               <img src="img/hero-desktop-1.jpg" srcset="img/hero-desktop-1@2x.jpg 2x" width="1440" height="800" alt="">
             </div>
           </div>
-          <div class="hero__slide swiper-slide">
+          <div class="hero__slide swiper-slide" data-slider="hero-slide">
             <div class="hero__content-wrapper">
               <h1>Волонтёрские программы – внесите свой вклад в общество</h1>
               <div class="hero__text-wrapper">
                 <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.
                 </p>
-                <div class="hero__button-wrapper">
+                <button class="hero__button button" type="button">
                   <span class="hero__button-text">Подробнее</span>
-                  <button class="hero__button button button--hero" type="button">
+                  <div class="button__icon button__icon--hero">
                     <svg width="8" height="8" role="img">
                       <use href="__spritemap#sprite-arrow-button-icon"></use>
                     </svg>
-                  </button>
-                </div>
+                  </div>
+                </button>
+                <svg width="26" height="26" role="img">
+                  <use href="__spritemap#sprite-angle-right-top"></use>
+                </svg>
               </div>
             </div>
             <div class="hero__image-wrapper">
               <img src="img/hero-desktop-2.jpg" srcset="img/hero-desktop-2@2x.jpg 2x" width="1440" height="800" alt="">
             </div>
           </div>
-          <div class="hero__slide swiper-slide">
+          <div class="hero__slide swiper-slide" data-slider="hero-slide">
             <div class="hero__content-wrapper">
               <h1>Программы стажировок в крупнейших компаниях мира</h1>
               <div class="hero__text-wrapper">
                 <p>Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.</p>
-                <div class="hero__button-wrapper">
+                <button class="hero__button button" type="button">
                   <span class="hero__button-text">Подробнее</span>
-                  <button class="hero__button button button--hero" type="button">
+                  <div class="button__icon button__icon--hero">
                     <svg width="8" height="8" role="img">
                       <use href="__spritemap#sprite-arrow-button-icon"></use>
                     </svg>
-                  </button>
-                </div>
+                  </div>
+                </button>
+                <svg width="26" height="26" role="img">
+                  <use href="__spritemap#sprite-angle-right-top"></use>
+                </svg>
               </div>
             </div>
             <div class="hero__image-wrapper">
@@ -159,7 +168,12 @@
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="hero__pagination-wrapper">
+          <div class="hero__pagination swiper-pagination" data-slider="hero-pagination"></div>
+          <svg width="26" height="26" role="img">
+            <use href="__spritemap#sprite-angle-right-bottom"></use>
+          </svg>
+        </div>
         <!-- </div> -->
     </header>
     <main>

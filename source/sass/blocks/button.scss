@@ -37,6 +37,10 @@
   background-color: $color-cerulian-blue;
   border: none;
   border-radius: 50%;
+
+  &--hero {
+    padding: 19px;
+  }
 }
 
 .button svg {
