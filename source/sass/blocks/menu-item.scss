@@ -1,10 +1,14 @@
 .menu-item {
   list-style: none;
+
+  svg {
+    color: $color-white-70;
+  }
 }
 
-.menu-item svg {
-  color: $color-white-70;
-}
+// .menu-item svg {
+//   color: $color-white-70;
+// }
 
 .menu-item.is-active svg {
   color: $color-default-white;

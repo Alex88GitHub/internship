@@ -21,6 +21,13 @@
   line-height: $lh-h4-desktop;
 }
 
+@mixin h5-desktop {
+  font-size: $fz-h5-desktop;
+  line-height: $lh-h5-desktop;
+  letter-spacing: 0.26px;
+  text-transform: uppercase;
+}
+
 @mixin text-big-desktop {
   font-size: $fz-big-desktop;
   line-height: $lh-big-desktop;

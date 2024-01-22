@@ -1,0 +1,37 @@
+.features-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 24px;
+  padding: 30px 60px;
+  border: 1px solid $color-default-white;
+  border-radius: 16px;
+  list-style: none;
+
+  h4 {
+    @include h5-desktop;
+    min-width: 174px;
+  }
+
+  p {
+    @include text-small-desktop;
+    min-width: 190px;
+    margin: 0;
+  }
+}
+
+.features-item__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 42px;
+  height: 42px;
+  padding: 10px;
+  background-color: $color-cerulian-blue;
+
+  svg {
+    display: block;
+    // margin: 0 auto;
+  }
+}

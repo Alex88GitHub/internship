@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  margin-bottom: 120px;
 }
 
 .header__overlay {
@@ -31,12 +32,17 @@
   padding: 10px;
   background-color: $color-default-white;
   border-radius: 50%;
+
+  svg {
+    display: block;
+    color: $color-cerulian-blue;
+  }
 }
 
-.header__logo svg {
-  display: block;
-  color: $color-cerulian-blue;
-}
+// .header__logo svg {
+//   display: block;
+//   color: $color-cerulian-blue;
+// }
 
 .header__button {
   position: relative;
