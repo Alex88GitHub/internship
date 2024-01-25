@@ -5,17 +5,21 @@
   margin: 0 auto;
   padding: 0 100px 0;
 
-  &--hero {
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 60px;
-  }
-
   @include vp-1439 {
     padding: 0 45px;
   }
 
   @include vp-767 {
     padding: 0 15px;
+  }
+
+  &--hero {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 60px;
+
+    // @include vp-1439 {
+    //   padding-bottom: 60px;
+    // }
   }
 }

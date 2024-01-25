@@ -1,6 +1,10 @@
 .header {
   position: relative;
   margin-bottom: 120px;
+
+  @include vp-1439 {
+    margin-bottom: 100px;
+  }
 }
 
 .header__overlay {

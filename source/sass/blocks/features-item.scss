@@ -1,22 +1,43 @@
 .features-item {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: min-content auto;
   column-gap: 24px;
-  padding: 30px 60px;
+  padding: 25px 60px;
   border: 1px solid $color-default-white;
   border-radius: 16px;
   list-style: none;
 
+  @include vp-1439 {
+    grid-template-columns: auto;
+    grid-template-rows: min-content;
+    row-gap: 12px;
+    padding: 30px;
+  }
+
   h4 {
     @include h5-desktop;
-    min-width: 174px;
+
+    @include vp-1439 {
+      @include h5-tablet;
+      max-width: 197px
+    }
   }
 
   p {
     @include text-small-desktop;
-    min-width: 190px;
     margin: 0;
+    color: $color-alabaster;
+
+    @include vp-1439 {
+      @include text-small-tablet;
+    }
+
+    br {
+      @include vp-1439 {
+        display: none;
+      }
+    }
   }
 }
 

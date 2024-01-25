@@ -9,6 +9,12 @@
   background-color: $color-cerulian-blue;
   color: $color-default-white;
   border-radius: 20px;
+
+  @include vp-1439 {
+    padding: 40px;
+    column-gap: 30px;
+    row-gap: 42px;
+  }
 }
 
 .features-list__item {

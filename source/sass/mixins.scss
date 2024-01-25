@@ -10,6 +10,7 @@
 @mixin h2-desktop {
   font-size: $fz-h2-desktop;
   line-height: $lh-h2-desktop;
+  font-weight: $fw-regular;
 }
 
 @mixin h3-desktop {
@@ -90,6 +91,14 @@
 @mixin h4-tablet {
   font-size: $fz-h4-tablet;
   line-height: $lh-h4-tablet;
+}
+
+@mixin h5-tablet {
+  font-size: $fz-h5-tablet;
+  line-height: $lh-h5-tablet;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  font-weight: $fw-regular;
 }
 
 @mixin text-big-tablet {
