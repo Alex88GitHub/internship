@@ -8,6 +8,14 @@
 
 .hero__slide.swiper-slide {
   min-height: 800px;
+
+  @include vp-1439 {
+    min-height: 1024px;
+  }
+
+  @include vp-767 {
+    min-height: 568px;
+  }
 }
 
 .hero__content-wrapper {
@@ -29,6 +37,12 @@
       @include h1-tablet;
       padding: 30px 40px 24px;
     }
+
+    @include vp-767 {
+      @include h1-mobile;
+      padding: 20px 14px 16px;
+      border-radius: 0 16px 16px 0;
+    }
   }
 }
 
@@ -48,6 +62,13 @@
     padding: 0 40px 28px;
   }
 
+  @include vp-767 {
+    display: block;
+    margin-right: 23px;
+    padding: 0 14px 15px;
+    border-radius: 0 0 16px 16px;
+  }
+
   p {
     width: 446px;
     margin: 0;
@@ -55,6 +76,11 @@
     @include vp-1439 {
       @include text-regular-tablet;
       width: initial;
+    }
+
+    @include vp-767 {
+      @include text-regular-mobile;
+      margin-bottom: 15px;
     }
 
     br {
@@ -75,7 +101,13 @@
   position: absolute;
   top: 0;
   right: 0;
-  transform: translateX(99%)
+  transform: translateX(99%);
+
+  @include vp-767 {
+    transform: translateX(100%);
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .hero__image-wrapper {
@@ -83,12 +115,16 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 800px;
+  min-height: 800px;
   z-index: 0;
 
-  // img {
-  //   margin: 0 auto;
-  // }
+  @include vp-1439 {
+    min-height: 1024px;
+  }
+
+  @include vp-767 {
+    min-height: 568px;
+  }
 }
 
 .hero__pagination-wrapper {
@@ -103,6 +139,12 @@
     bottom: -1px;
     right: 0;
     transform: translateX(99%);
+
+    @include vp-767 {
+      transform: translateX(100%);
+      width: 10px;
+      height: 10px;
+    }
   }
 }
 
@@ -112,6 +154,10 @@
   padding: 14px 20px;
   background-color: $color-default-white;
   border-radius: 20px 20px 0 0;
+
+  @include vp-767 {
+    border-radius: 12px 12px 0 0;
+  }
 }
 
 .hero__pagination.swiper-pagination .swiper-pagination-bullet {
@@ -121,6 +167,11 @@
   background-color: $color-default-white;
   opacity: 1;
   border: 1px solid $color-cerulian-blue;
+
+  @include vp-767 {
+    width: 8px;
+    height: 8px;
+  }
 }
 
 .hero__pagination.swiper-pagination .swiper-pagination-bullet-active {

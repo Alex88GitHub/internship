@@ -162,6 +162,14 @@
   line-height: $lh-h4-mobile;
 }
 
+@mixin h5-mobile {
+  font-size: $fz-big-mobile;
+  line-height: $lh-default-mobile;
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+  font-weight: $fw-regular;
+}
+
 @mixin text-big-mobile {
   font-size: $fz-big-mobile;
   line-height: $lh-big-mobile;

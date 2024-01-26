@@ -11,7 +11,7 @@ export const heroSlider = () => {
   const sli = new Swiper(slider, {
     observer: true,
     loop: true,
-    // autoHeight: true,
+    autoHeight: true,
     // autoplay: {
     //   delay: 3000,
     // },
