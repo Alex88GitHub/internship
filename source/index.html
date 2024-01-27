@@ -110,7 +110,7 @@
                   alt="">
               </picture>
             </div>
-            <div class="container container--hero">
+            <div class="hero__container container">
               <div class="hero__content-wrapper">
                 <div class="hero__pagination-wrapper">
                   <div class="hero__pagination swiper-pagination" data-slider="hero-pagination"></div>
@@ -153,7 +153,7 @@
                   alt="">
               </picture>
             </div>
-            <div class="container container--hero">
+            <div class="hero__container container">
               <div class="hero__content-wrapper">
                 <div class="hero__pagination-wrapper">
                   <div class="hero__pagination swiper-pagination" data-slider="hero-pagination"></div>
@@ -196,7 +196,7 @@
                   alt="">
               </picture>
             </div>
-            <div class="container container--hero">
+            <div class="hero__container container">
               <div class="hero__content-wrapper">
                 <div class="hero__pagination-wrapper">
                   <div class="hero__pagination swiper-pagination" data-slider="hero-pagination"></div>
@@ -243,7 +243,7 @@
           <div class="about__text-wrapper">
             <div class="about__title-wrapper">
               <h2 class="about__title">О проекте «Стажировка»</h2>
-              <p>«Стажировка» — совместный проект<br> правительства и волонтёрских бригад.</p>
+              <p>«Стажировка» — совместный проект<br> правительств и волонтёрских бригад.</p>
             </div>
             <div class="about__text-content">
               <h3>Наша цель</h3>
@@ -271,7 +271,7 @@
               </div>
             </li>
             <li class="features-list__item features-item">
-              <h4>Более 3000 участников</h4>
+              <h4>Более <br> 3000 участников</h4>
               <p>уже успешно прошли программу<br> от «Стажировка»<br> и остались в разных странах</p>
               <div class="features-item__icon">
                 <svg width="22" height="22" role="img">
@@ -279,7 +279,7 @@
                 </svg>
               </div>
             </li>
-            <li class="features-list__item features-item">
+            <li class="features-list__item features-item features-item--price">
               <h4>От 4 200&nbsp;$<br> до&nbsp;8 400&nbsp;$</h4>
               <p>грант всем участникам<br> для комфортного<br> прохождения программы</p>
               <div class="features-item__icon">
@@ -304,8 +304,49 @@
       <section class="programs" data-test="programs">
 
       </section>
-      <!--<div data-test="grant">grant</div>
-      <div data-test="news">news</div>
+      <section class="grant" data-test="grant">
+        <div class="grant__container container">
+          <div class="grant__title-wrapper">
+            <div class="grant__text-content">
+              <h2 class="grant__title">Как поехать</h2>
+              <p>Свяжитесь с координатором, чтобы узнать полную информацию. Вы получите актуальные сведения о доступных
+                программах и городах, в которых можете пройти программу.</p>
+            </div>
+            <div class="grant__image-wrapper">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/grant-image-mobile.jpg 1x, img/grant-image-mobile@2x.jpg 2x" width="290" height="200">
+                <source media="(max-width: 1439px)" srcset="img/grant-image-tablet.jpg 1x, img/grant-image-tablet@2x.jpg 2x" width="678" height="375">
+                <img src="img/grant-image-desktop.jpg" srcset="img/grant-image-desktop@2x.jpg 2x" width="498"
+                  height="363" alt="">
+              </picture>
+            </div>
+          </div>
+          <div class="grant__requirements-wrapper">
+            <h3 class="grant__requirements-title">Чтобы получить грант на обучение, вам нужно:</h3>
+            <ul class="grant__requirements-list requirements-list">
+              <li class="requirements-list__item requirements-item">
+                <span class="requirements-item__icon">1</span>
+                <p class="requirements-item__text">Быть в возрасте от 16 до 30 лет</p>
+              </li>
+              <li class="requirements-list__item requirements-item">
+                <span class="requirements-item__icon">2</span>
+                <p class="requirements-item__text">Иметь оконченное среднее образование</p>
+              </li>
+              <li class="requirements-list__item requirements-item">
+                <span class="requirements-item__icon">3</span>
+                <p class="requirements-item__text">Иметь документально подтверждённое<br> отсутствие судимости и пройти
+                  консульскую<br> проверку</p>
+              </li>
+              <li class="requirements-list__item requirements-item">
+                <span class="requirements-item__icon">4</span>
+                <p class="requirements-item__text">За последние 2 года быть не больше 3х месяцев подряд непрерывно в
+                  одной стране</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- <div data-test="news">news</div>
       <div data-test="FAQ">FAQ</div>
       <div data-test="reviews">reviews</div>
       <div data-test="contacts">contacts</div>
