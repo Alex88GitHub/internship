@@ -11,8 +11,8 @@
   @include vp-1439 {
     grid-template-columns: auto;
     grid-template-rows: min-content;
-    row-gap: 12px;
-    padding: 30px;
+    row-gap: 7px;
+    padding: 27px 16px 24px 30px;
   }
 
   @include vp-767 {
@@ -22,6 +22,8 @@
 
   h4 {
     @include h5-desktop;
+    margin-top: 4px;
+    min-width: 135px;
 
     @include vp-1439 {
       @include h5-tablet;
@@ -31,6 +33,12 @@
     @include vp-767 {
       @include h5-mobile;
       max-width: initial;
+    }
+
+    br {
+      @include vp-767 {
+        display: none;
+      }
     }
   }
 

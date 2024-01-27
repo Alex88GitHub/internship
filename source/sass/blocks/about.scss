@@ -9,18 +9,18 @@
   margin-bottom: 60px;
 
   @include vp-1439 {
-    gap: 40px;
+    gap: 29px;
   }
 }
 
 .about__title {
   @include h2-desktop;
-  padding: 11px 133px 19px 0;
+  padding: 3px 133px 19px 0;
   color: $color-cerulian-blue;
 
   @include vp-1439 {
     @include h2-tablet;
-    padding: 13px 28px 13px 0;
+    padding: 0 28px 13px 0;
   }
 
   @include vp-767 {
@@ -32,7 +32,7 @@
 .about__title-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 11px;
   width: 477px;
 
   @include vp-1439 {
@@ -68,14 +68,14 @@
 .about__text-content {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 32px;
   width: 498px;
   margin-right: 106px;
 
   @include vp-1439 {
     width: 100%;
     margin-right: 180px;
-    gap: 30px;
+    gap: 23px;
   }
 
   @include vp-767 {
@@ -102,6 +102,7 @@
 
     @include vp-1439 {
       @include text-regular-tablet;
+      margin-bottom: 13px;
     }
 
     @include vp-767 {
@@ -121,5 +122,5 @@
 }
 
 .about__button {
-  align-self: start;
+  align-self: flex-start;
 }

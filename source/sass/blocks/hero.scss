@@ -19,11 +19,11 @@
 }
 
 .hero__content-wrapper {
-  // position: relative;
-  // // left: 100px;
-  // // top: 457px;
-  // bottom: 0;
-  // z-index: 1;
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   h1 {
     @include h1-desktop;
@@ -40,7 +40,7 @@
 
     @include vp-767 {
       @include h1-mobile;
-      padding: 20px 14px 16px;
+      padding: 20px 14px 13px;
       border-radius: 0 16px 16px 0;
     }
   }
@@ -65,7 +65,8 @@
   @include vp-767 {
     display: block;
     margin-right: 23px;
-    padding: 0 14px 15px;
+    padding: 0;
+    background-color: $color-transparent;
     border-radius: 0 0 16px 16px;
   }
 
@@ -80,7 +81,10 @@
 
     @include vp-767 {
       @include text-regular-mobile;
-      margin-bottom: 15px;
+      padding: 0 14px 8px;
+      background-color: $color-default-white;
+      border-radius: 0 0 14px 0;
+      // margin-bottom: 15px;
     }
 
     br {
@@ -93,11 +97,39 @@
   }
 }
 
-.hero__link {
-  align-self: center;
+.hero__button-wrapper {
+  @include vp-767 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: $color-default-white;
+    border-radius: 0 0 14px 14px;
+  }
 }
 
-.hero__text-wrapper > svg {
+.hero__button-wrapper>svg {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.hero__link {
+  align-self: center;
+
+  @include vp-1439 {
+    align-self: flex-start;
+  }
+}
+
+.hero__text-wrapper>svg {
   position: absolute;
   top: 0;
   right: 0;
@@ -156,6 +188,7 @@
   border-radius: 20px 20px 0 0;
 
   @include vp-767 {
+    padding: 10px 16px;
     border-radius: 12px 12px 0 0;
   }
 }

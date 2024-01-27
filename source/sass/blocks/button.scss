@@ -18,6 +18,10 @@
     padding: 4px 4px 4px 20px;
   }
 
+  &--about {
+    background-color: $color-transparent;
+  }
+
   span {
     @include text-button-desktop;
     color: $color-cerulian-blue;
