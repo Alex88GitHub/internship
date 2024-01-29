@@ -1,0 +1,52 @@
+.contacts-item {
+  max-width: 263px;
+  list-style: none;
+
+  @include vp-1439 {
+    max-width: 39%;
+  }
+
+  @include vp-767 {
+    max-width: 79%;
+  }
+}
+
+.contacts-item__title {
+  margin-bottom: 15px;
+  font-size: $fz-xsmall-desktop;
+  line-height: $lh-xxsmall-desktop;
+  font-weight: $fw-regular;
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+  color: $color-alabaster;
+  opacity: 0.8;
+
+  @include vp-767 {
+    margin-bottom: 8px;
+  }
+}
+
+.contacts-item__text {
+  // @include text-regular-desktop;
+  margin: 0;
+
+  @include vp-1439 {
+    @include text-regular-tablet;
+  }
+
+  @include vp-767 {
+    @include text-regular-mobile;
+  }
+}
+
+.contacts-item__link {
+  color: $color-default-white;
+
+  @include vp-1439 {
+    @include text-regular-tablet;
+  }
+
+  @include vp-767 {
+    @include text-regular-mobile;
+  }
+}

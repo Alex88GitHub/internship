@@ -314,8 +314,10 @@
             </div>
             <div class="grant__image-wrapper">
               <picture>
-                <source media="(max-width: 767px)" srcset="img/grant-image-mobile.jpg 1x, img/grant-image-mobile@2x.jpg 2x" width="290" height="200">
-                <source media="(max-width: 1439px)" srcset="img/grant-image-tablet.jpg 1x, img/grant-image-tablet@2x.jpg 2x" width="678" height="375">
+                <source media="(max-width: 767px)"
+                  srcset="img/grant-image-mobile.jpg 1x, img/grant-image-mobile@2x.jpg 2x" width="290" height="200">
+                <source media="(max-width: 1439px)"
+                  srcset="img/grant-image-tablet.jpg 1x, img/grant-image-tablet@2x.jpg 2x" width="678" height="375">
                 <img src="img/grant-image-desktop.jpg" srcset="img/grant-image-desktop@2x.jpg 2x" width="498"
                   height="363" alt="">
               </picture>
@@ -348,9 +350,34 @@
       </section>
       <!-- <div data-test="news">news</div>
       <div data-test="FAQ">FAQ</div>
-      <div data-test="reviews">reviews</div>
-      <div data-test="contacts">contacts</div>
-      <div data-test="form">form</div> -->
+      <div data-test="reviews">reviews</div> -->
+      <section class="contacts" data-test="contacts">
+        <div class="contacts__container container">
+          <div class="contacts__title-wrapper">
+            <h2 class="contacts__title">Контакты</h2>
+            <ul class="contacts__contacts-list contacts-list">
+              <li class="contacts-list__item contacts-item">
+                <h3 class="contacts-item__title">Центральный офис</h3>
+                <p class="contacts-item__text">г. Новосибирск, ул. Щетинкина 68, культурный центр</p>
+              </li>
+              <li class="contacts-list__item contacts-item">
+                <h3 class="contacts-item__title">Телефон</h3>
+                <a class="contacts-item__link" href="tel:896387687676">+7 963 876 876 76</a>
+              </li>
+              <li class="contacts-list__item contacts-item">
+                <h3 class="contacts-item__title">Email</h3>
+                <a class="contacts-item__link" href="mailto:info@stazh.ru">info@stazh.ru</a>
+              </li>
+            </ul>
+          </div>
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/map-mobile.jpg 1x, img/map-mobile@2x.jpg 2x" width="290" height="240">
+            <source media="(max-width: 1439px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x" width="678" height="500">
+            <img src="img/map-desktop.jpg" srcset="img/map-desktop@2x.jpg 2x" width="1240" height="500" alt="Местоположение на карте города.">
+          </picture>
+        </div>
+      </section>
+      <!-- <div data-test="form">form</div> -->
     </main>
     <!-- <div data-test="footer">footer</div> -->
   </div>
