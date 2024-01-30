@@ -12,7 +12,7 @@ export const reviewsSlider = () => {
 
   const slider = new Swiper(sliderEl, {
     loop: false,
-    autoHeight: true,
+    autoHeight: false,
     navigation: {
       prevEl: buttonPrev,
       nextEl: buttonNext,

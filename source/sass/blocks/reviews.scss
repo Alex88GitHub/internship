@@ -1,27 +1,55 @@
 .reviews {
   margin-bottom: 120px;
+  padding-top: 4px;
+
+  @include vp-1439 {
+    padding-top: 0;
+    padding-bottom: 1px;
+  }
 
   @include vp-767 {
     margin-bottom: 60px;
   }
 }
 
+.reviews__container {
+  @include vp-1439 {
+    padding-right: 0;
+  }
+
+  @include vp-767 {
+    padding-top: 3px;
+    padding-right: 15px;
+  }
+}
+
 .reviews__title {
   @include h2-desktop;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
+  padding-left: 3px;
   color: $color-cerulian-blue;
 
   @include vp-1439 {
     @include h2-tablet;
+    margin-bottom: 40px;
+    padding-left: 0;
   }
 
   @include vp-767 {
     @include h2-mobile;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 }
 .reviews__slider {
   margin-bottom: 40px;
+
+  @include vp-1439 {
+    margin-bottom: 38px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 0;
+  }
 }
 
 .reviews__slider-wrapper.swiper-wrapper {
@@ -37,6 +65,10 @@
   gap: 52px;
   align-items: center;
 
+  @include vp-1439 {
+    width: calc(100% - 45px);
+  }
+
   @include vp-767 {
     position: absolute;
     display: inline-flex;
@@ -50,6 +82,7 @@
   height: 2px;
   bottom: initial;
   left: initial;
+  width: 100%;
   background-color: $color-cerulian-blue-20;
 
   @include vp-767 {
@@ -66,6 +99,12 @@
   // height: 22px;
   display: flex;
   gap: 10px;
+
+  @include vp-767 {
+    position: absolute;
+    top: 2px;
+    right: 0;
+  }
 }
 
 .reviews__button-prev.swiper-button-prev,
@@ -76,7 +115,7 @@
   width: 22px;
   height: 22px;
   margin: 0;
-  padding: 6px;
+  padding: 5px;
   background-color: $color-transparent;
   border: none;
 
@@ -86,5 +125,6 @@
 
   svg {
     display: block;
+    color: $color-cerulian-blue;
   }
 }
