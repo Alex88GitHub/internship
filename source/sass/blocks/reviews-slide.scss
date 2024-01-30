@@ -1,0 +1,135 @@
+.reviews-slide {
+  padding: 50px;
+  border: 1px solid $color-cerulian-blue;
+  border-radius: 16px;
+
+  @include vp-767 {
+    padding: 30px 15px;
+  }
+}
+
+.reviews-slide.swiper-slide {
+  width: 604px;
+
+  @include vp-1439 {
+    width: 560px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.reviews-slide__info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+  @include vp-767 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 25px;
+    row-gap: 15px;
+    justify-items: start;
+  }
+}
+
+.reviews-slide__autor-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+
+    @include vp-767 {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  p {
+    @include text-medium-desktop;
+    margin: 0;
+    color: $color-cerulian-blue;
+
+    @include vp-1439 {
+      font-size: $fz-h5-tablet;
+      line-height: $lh-medium-tablet;
+    }
+
+    @include vp-767 {
+      @include text-xsmall-desktop;
+    }
+  }
+
+  @include vp-767 {
+    grid-column: 1/-1;
+  }
+}
+
+.reviews-slide__details-wrapper {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.reviews-slide__program-content,
+.reviews-slide__date-content {
+  span {
+    font-size: $fz-xsmall-desktop;
+    line-height: $lh-xxsmall-desktop;
+    letter-spacing: 0.12px;
+    text-transform: uppercase;
+    color: $color-cerulian-blue;
+  }
+
+  p {
+    @include text-xsmall-desktop;
+    margin: 0;
+
+    @include vp-1439 {
+      @include text-xsmall-tablet;
+    }
+  }
+}
+
+.reviews-slide__content {
+  h3 {
+    margin-bottom: 25px;
+    font-size: $fz-h6-desktop;
+    line-height: $lh-default-desktop;
+    font-weight: $fw-regular;
+    color: $color-cerulian-blue;
+
+    @include vp-1439 {
+      font-size: $fz-h5-tablet;
+      line-height: $lh-medium-tablet;
+    }
+
+    @include vp-767 {
+      font-size: $fz-h4-mobile;
+      line-height: $lh-h4-mobile;
+    }
+  }
+
+  p {
+    @include text-regular-desktop;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    @include vp-1439 {
+      @include text-regular-tablet;
+    }
+
+    @include vp-767 {
+      @include text-regular-mobile;
+    }
+  }
+}

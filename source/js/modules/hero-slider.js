@@ -5,10 +5,10 @@ import Swiper from 'swiper/bundle';
 // // const pagination = slider.querySelector('[data-slider="hero-pagination"]');
 
 export const heroSlider = () => {
-  const slider = document.querySelector('[data-slider="hero-slider"]');
+  const sliderEl = document.querySelector('[data-slider="hero-slider"]');
   // const pagination = slider.querySelector('[data-slider="hero-pagination"]');
 
-  const sli = new Swiper(slider, {
+  const slider = new Swiper(sliderEl, {
     observer: true,
     loop: true,
     autoHeight: true,
@@ -21,9 +21,9 @@ export const heroSlider = () => {
     },
     on: {
       slideChangeTransitionStart: function () {
-        sli.pagination.init();
-        sli.pagination.render();
-        sli.pagination.update();
+        slider.pagination.init();
+        slider.pagination.render();
+        slider.pagination.update();
       }
     },
 
