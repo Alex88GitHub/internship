@@ -63,6 +63,7 @@
   }
 
   &--accordion.is-active {
+    flex-shrink: 0;
     background-color: $color-default-white;
 
     svg {
