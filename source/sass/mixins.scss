@@ -22,6 +22,7 @@
 @mixin h4-desktop {
   font-size: $fz-h4-desktop;
   line-height: $lh-h4-desktop;
+  font-weight: $fw-regular;
 }
 
 @mixin h5-desktop {

@@ -18,6 +18,25 @@
     padding: 4px 4px 4px 20px;
   }
 
+  &--menu.is-active {
+    width: 290px;
+    background-color: $color-cerulian-blue;
+    justify-content: space-between;
+    border-color: $color-transparent;
+
+    span {
+      color: $color-default-white;
+    }
+
+    .button__icon {
+      background-color: $color-default-white;
+    }
+
+    svg {
+      color: $color-cerulian-blue;
+    }
+  }
+
   &--about {
     background-color: $color-transparent;
   }
@@ -35,26 +54,41 @@
     display: block;
     color: $color-default-white;
   }
-}
 
-.button.is-active {
-  width: 290px;
-  background-color: $color-cerulian-blue;
-  justify-content: space-between;
-  border-color: $color-transparent;
-
-  span {
-    color: $color-default-white;
+  &--accordion {
+    padding: 9px;
+    background-color: $color-cerulian-blue;
+    gap: initial;
+    border-color: $color-transparent;
   }
 
-  .button__icon {
+  &--accordion.is-active {
     background-color: $color-default-white;
-  }
 
-  svg {
-    color: $color-cerulian-blue;
+    svg {
+      color: $color-cerulian-blue;
+    }
   }
 }
+
+// .button.is-active {
+//   width: 290px;
+//   background-color: $color-cerulian-blue;
+//   justify-content: space-between;
+//   border-color: $color-transparent;
+
+//   span {
+//     color: $color-default-white;
+//   }
+
+//   .button__icon {
+//     background-color: $color-default-white;
+//   }
+
+//   svg {
+//     color: $color-cerulian-blue;
+//   }
+// }
 
 .button__icon {
   padding: 13px;

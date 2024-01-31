@@ -37,5 +37,5 @@ export const reviewsSlider = () => {
       },
     },
   });
-  slider();
+  return slider;
 };
