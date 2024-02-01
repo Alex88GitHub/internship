@@ -33,6 +33,12 @@
   font-weight: $fw-regular;
 }
 
+@mixin h6-desktop {
+  font-size: $fz-h6-desktop;
+  line-height: $lh-default-desktop;
+  font-weight: $fw-regular;
+}
+
 @mixin text-big-desktop {
   font-size: $fz-big-desktop;
   line-height: $lh-big-desktop;

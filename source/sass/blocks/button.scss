@@ -55,6 +55,13 @@
     color: $color-default-white;
   }
 
+  &--arrow {
+    padding: 9px;
+    background-color: $color-cerulian-blue;
+    border: none;
+    // flex-shrink: 0;
+  }
+
   &--accordion {
     padding: 9px;
     background-color: $color-cerulian-blue;

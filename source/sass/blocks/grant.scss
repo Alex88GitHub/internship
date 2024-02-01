@@ -50,8 +50,8 @@
   p {
     margin: 0;
 
-    &:not(:last-child) {
-      margin: 0 0 10px;
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
     }
 
     @include vp-1439 {
