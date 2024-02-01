@@ -20,14 +20,18 @@ export const programsSlider = () => {
 
     breakpoints: {
       320: {
-
+        slidesPerView: 1,
+        spaceBetween: 15,
       },
       768: {
         slidesPerView: 'auto',
         spaceBetween: 30,
+        scrollbar: {
+          dragSize: '324',
+        },
       },
       1440: {
-        slidesPerView: 'auto',
+        slidesPerView: 3,
         allowTouchMove: false,
         spaceBetween: 32,
         scrollbar: {

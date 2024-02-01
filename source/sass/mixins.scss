@@ -108,6 +108,12 @@
   font-weight: $fw-regular;
 }
 
+@mixin h6-tablet {
+  font-size: $fz-h5-tablet;
+  line-height: $lh-medium-tablet;
+  font-weight: $fw-regular;
+}
+
 @mixin text-big-tablet {
   font-size: $fz-big-tablet;
   line-height: $lh-big-tablet;

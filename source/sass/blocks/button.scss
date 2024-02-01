@@ -3,7 +3,7 @@
   align-items: center;
   gap: 30px;
   padding: 4px 4px 4px 30px;
-  background-color: $color-default-white;
+  background-color: $color-transparent;
   border: 1px solid $color-cerulian-blue;
   border-radius: 30px;
   // transition: width 0.5s ease-out;
@@ -16,6 +16,7 @@
   &--menu {
     gap: 20px;
     padding: 4px 4px 4px 20px;
+    background-color: $color-default-white;
   }
 
   &--menu.is-active {
@@ -37,10 +38,6 @@
     }
   }
 
-  &--about {
-    background-color: $color-transparent;
-  }
-
   span {
     @include text-button-desktop;
     color: $color-cerulian-blue;
@@ -56,10 +53,15 @@
   }
 
   &--arrow {
-    padding: 9px;
+    padding: 10px;
     background-color: $color-cerulian-blue;
     border: none;
     // flex-shrink: 0;
+  }
+
+  &--programs {
+    padding: 4px 4px 4px 30px;
+    gap: 30px;
   }
 
   &--accordion {

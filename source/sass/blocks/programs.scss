@@ -1,37 +1,76 @@
 .programs {
-
-}
-
-.programs__title-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 40px;
+  margin-bottom: 120px;
 
   @include vp-1439 {
-
+    margin-bottom: 100px;
   }
 
   @include vp-767 {
+    margin-bottom: 60px;
+  }
+}
 
+.programs__container {
+  display: grid;
+  grid-template-columns: repeat(2, auto) 54px;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 42px;
+  column-gap: 52px;
+
+  @include vp-1439 {
+    row-gap: 39px;
+    column-gap: 0;
+    padding-right: 0;
+  }
+
+  @include vp-767 {
+    grid-template-columns: repeat(2, auto);
+    row-gap: 29px;
+    padding-right: 15px;
   }
 }
 
 .programs__title {
   @include h2-desktop;
+  padding-top: 4px;
   color: $color-cerulian-blue;
+  justify-self: start;
 
   @include vp-1439 {
     @include h2-tablet;
+    padding-top: 1px;
   }
 
   @include vp-767 {
     @include h2-mobile;
+    padding-top: 3px;
+  }
+}
+
+.programs__link {
+  grid-column: 2/-1;
+  justify-self: end;
+
+  @include vp-1439 {
+    margin-right: 45px;
+  }
+
+  @include vp-767 {
+    grid-column: 1/2;
+    justify-self: start;
+    margin-right: 0;
   }
 }
 
 .programs__slider {
-  margin-bottom: 40px;
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  width: 100%;
+
+
+  @include vp-767 {
+    padding-top: 2px;
+  }
 }
 
 .programs__slider-wrapper.swiper-wrapper {
@@ -58,6 +97,17 @@
   min-height: 420px;
   height: auto;
   padding: 0 51px 20px 20px;
+
+  @include vp-1439 {
+    width: 324px;
+    padding: 0 41px 20px 20px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    min-height: 400px;
+    padding: 0 10px 18px 10px;
+  }
 }
 
 .programs__content-wrapper {
@@ -76,6 +126,16 @@
   background-color: $color-default-white;
   border-radius: 12px 12px 0 0;
 
+  @include vp-1439 {
+    min-width: 173px;
+    padding: 13px 12px 3px 18px;
+  }
+
+  @include vp-767 {
+    min-width: 146px;
+    padding: 18px 12px 4px 18px;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -87,14 +147,19 @@
     background-image: url('../img/sprite/angle-right-bottom.svg');
   }
 
-  h3{
+  h3 {
     @include h6-desktop;
     color: $color-cerulian-blue;
+
+    @include vp-1439 {
+      @include h6-tablet;
+    }
+
+    @include vp-767 {
+      @include h4-mobile;
+    }
   }
 }
-
-
-
 
 .programs__slide-content {
   position: relative;
@@ -108,6 +173,15 @@
   background-color: $color-default-white;
   border-radius: 0 12px 12px 12px;
 
+  @include vp-1439 {
+    padding: 3px 18px 8px;
+  }
+
+  @include vp-767 {
+    min-height: initial;
+    padding: 15px 18px 15px;
+  }
+
   p {
     @include text-xsmall-desktop;
     margin: 0;
@@ -116,10 +190,18 @@
     &:not(:last-of-type) {
       margin-bottom: 10px;
     }
+
+    @include vp-1439 {
+      @include text-xsmall-tablet;
+    }
+
+    @include vp-767 {
+      @include text-xsmall-mobile;
+    }
   }
 }
 
-.programs__link {
+.programs__slide-link {
   grid-column: 2/-1;
   grid-row: 1/-1;
   justify-self: start;
@@ -136,31 +218,19 @@
   border-radius: 12px;
 }
 
-
-.programs__scrollbar-wrapper {
-  display: flex;
-  gap: 52px;
-  align-items: center;
-
-  @include vp-1439 {
-    width: calc(100% - 45px);
-  }
-
-  @include vp-767 {
-    position: absolute;
-    display: inline-flex;
-    top: 0;
-    right: 15px;
-  }
-}
-
 .programs__scrollbar.swiper-scrollbar {
   position: relative;
+  grid-column: 1/3;
+  align-self: center;
   height: 2px;
   bottom: initial;
   left: initial;
   width: 100%;
   background-color: $color-cerulian-blue-20;
+
+  @include vp-1439 {
+    width: calc(100% - 99px);
+  }
 
   @include vp-767 {
     display: none;
@@ -173,14 +243,19 @@
 
 .programs__button-wrapper {
   position: relative;
-  // height: 22px;
-  display: flex;
+  grid-column: 3/-1;
+  justify-self: end;
+  display: inline-flex;
   gap: 10px;
 
+  @include vp-1439 {
+    margin-right: 45px;
+  }
+
   @include vp-767 {
-    position: absolute;
-    top: 2px;
-    right: 0;
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    margin-right: 0;
   }
 }
 
@@ -189,6 +264,7 @@
   position: relative;
   left: initial;
   right: initial;
+  top: initial;
   width: 22px;
   height: 22px;
   margin: 0;
