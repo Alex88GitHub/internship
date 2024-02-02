@@ -732,9 +732,9 @@
           </picture>
         </div>
       </section>
-      <section class="form" data-test="form">
+      <section class="feedback" data-test="form">
         <h2 class="visually-hidden">Форма обратной связи</h2>
-        <div class="form__container container">
+        <div class="feedback__container container">
           <picture>
             <source media="(max-width: 767px)" srcset="img/form-image-mobile.jpg 1x, img/form-image-mobile@2x.jpg 2x"
               width="320" height="753">
@@ -743,46 +743,89 @@
             <img src="img/form-image-desktop.jpg" srcset="img/form-image-desktop@2x.jpg 2x" width="1240" height="803"
               alt="">
           </picture>
-          <div class="form__wrapper">
-            <h3 class="form__title">Напишите нам</h3>
-            <p class="form__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <label>
-                <span>Имя</span>
-                <input type="text" name="name" autocomplete="off" required>
-              </label>
-              <label>
-                <span>Телефон</span>
-                <input type="tel" name="phone" autocomplete="off" required>
-              </label>
-              <label>
-                <span>Ваше сообщение</span>
-                <textarea required autocomplete="off"></textarea>
-              </label>
-              <label>
-                <span>Выберете город</span>
-                <select required>
-                  <option value="" selected></option>
-                  <option>Санкт-Петербург</option>
-                  <option>Санкт-Петербург</option>
-                  <option>Санкт-Петербург</option>
-                  <option>Санкт-Петербург</option>
-                </select>
-              </label>
-              <label>
-                <input class="visually-hidden" type="checkbox" required>
-                <span class="form__checkbox-mark"></span>
-                <span class="form__personal-text">Я согласен на обработку персональных данных</span>
-              </label>
-              <button class="form__button button button--submit" type="submit">
-                <span>Отправить</span>
-                <div class="button__icon button__icon--arrow">
-                  <svg width="10" height="10" role="img">
-                    <use href="__spritemap#sprite-arrow-button-icon"></use>
-                  </svg>
+          <div class="feedback__wrapper">
+            <button class="modal__close-button" type="button">
+              <svg width="22" height="22" role="img">
+                <use href="__spritemap#sprite-close-icon"></use>
+              </svg>
+              <span class="visually-hidden">Закрыть окно</span>
+            </button>
+            <h3 class="feedback__title">Напишите нам</h3>
+            <p class="feedback__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!
+            </p>
+            <div data-form-validate data-callback="base">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <div class="custom-input" data-required data-validate-type="text">
+                  <label>
+                    <span>Имя</span>
+                    <input type="text" name="name" autocomplete="off" required>
+                  </label>
                 </div>
-              </button>
-            </form>
+                <div class="custom-input" data-required data-validate-type="phone">
+                  <label>
+                    <span>Телефон</span>
+                    <input type="tel" name="phone" autocomplete="off" required>
+                  </label>
+                </div>
+                <div class="custom-input" data-required data-validate-type="text">
+                  <label>
+                    <span>Ваше сообщение</span>
+                    <textarea name="message" required autocomplete="off"></textarea>
+                  </label>
+                </div>
+                <!-- <label>
+                  <span>Выберете город</span>
+                  <select required>
+                    <option value="" selected></option>
+                    <option>Санкт-Петербург</option>
+                    <option>Санкт-Петербург</option>
+                    <option>Санкт-Петербург</option>
+                    <option>Санкт-Петербург</option>
+                  </select>
+                </label> -->
+                <div class="custom-select" data-select data-name="city" data-validate-type="select" data-required>
+                  <span class="custom-select__label">Выберете город</span>
+                  <button class="custom-select__button" type="button">
+                    <span class="custom-select__text"></span>
+                    <span class="custom-select__icon">
+                      <svg width="16" height="16" role="img">
+                        <use href="__spritemap#sprite-arrow-down-icon"></use>
+                      </svg>
+                    </span>
+                  </button>
+                  <ul class="custom-select__list" role="listbox">
+                    <li class="custom-select__item active" tabindex="0" data-selext-value=""></li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="Ekaterinburg" role="option"
+                      aria-selected="false">Екатеринбург</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="Moscow" role="option"
+                      aria-selected="false">Москва</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="St.Petersburg" role="option"
+                      aria-selected="false">Санкт-Петербург</li>
+                  </ul>
+                  <select name="city" tabindex="-1" aria-hidden="true">
+                    <option value=""></option>
+                    <option value="Ekaterinburg">Екатеринбург</option>
+                    <option value="Moscow">Москва</option>
+                    <option value="St.Petersburg">Санкт-Петербург</option>
+                  </select>
+                </div>
+                <div class="custom-toggle custom-toggle--checkbox" data-required data-validate-type="checkbox">
+                  <label>
+                    <input type="checkbox" name="user-agreement" value="user-agree" aria-invalid="true" required>
+                    <span class="custom-toggle__icon"></span>
+                    <span class="custom-toggle__label">Я согласен на обработку моих персональных данных</span>
+                  </label>
+                </div>
+                <button class="feedback__button button button--submit" type="submit">
+                  <span>Отправить</span>
+                  <div class="button__icon button__icon--arrow">
+                    <svg width="10" height="10" role="img">
+                      <use href="__spritemap#sprite-arrow-button-icon"></use>
+                    </svg>
+                  </div>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
