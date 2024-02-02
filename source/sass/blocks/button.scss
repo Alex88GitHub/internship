@@ -40,6 +40,7 @@
 
   span {
     @include text-button-desktop;
+    display: block;
     color: $color-cerulian-blue;
 
     @include vp-767 {
@@ -77,6 +78,27 @@
 
     svg {
       color: $color-cerulian-blue;
+    }
+  }
+
+  &--submit {
+    border-color: $color-default-white;
+
+    span {
+      width: 100%;
+      color: $color-default-white;
+    }
+
+    .button__icon {
+      background-color: $color-default-white;
+
+      &--arrow {
+        padding: 17px;
+      }
+
+      svg {
+        color: $color-cerulian-blue;
+      }
     }
   }
 }
