@@ -71,6 +71,11 @@
 .header__button-text {
   @include text-button-desktop;
   color: $color-cerulian-blue;
+
+  @include vp-767 {
+    font-size: $fz-default-mobile;
+    line-height: $lh-small-mobile;
+  }
 }
 
 .header__nav {
