@@ -9,4 +9,10 @@
   line-height: $fz-default-desktop;
   letter-spacing: 0.32px;
   color: $color-white-60;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-default-white;
+    cursor: pointer;
+  }
 }

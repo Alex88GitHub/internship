@@ -127,4 +127,22 @@
     display: block;
     color: $color-cerulian-blue;
   }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-default-white;
+    border-radius: 50%;
+  }
+
+  &:active {
+    svg {
+      opacity: 0.7;
+    }
+  }
+
+  &:disabled {
+    svg {
+      color: $color-mischka;
+    }
+  }
 }

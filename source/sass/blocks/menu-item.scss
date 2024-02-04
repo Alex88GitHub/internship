@@ -24,6 +24,16 @@
   letter-spacing: 0.32px;
   color: $color-white-70;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-default-white;
+    cursor: pointer;
+
+    svg {
+      color: $color-default-white;
+    }
+  }
 }
 
 .menu-item__link.is-active {

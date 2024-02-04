@@ -67,6 +67,32 @@
       padding: 19px 14px 19px 14px;
     }
   }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-default-white;
+    cursor: pointer;
+
+    .button--accordion {
+      background-color: $color-transparent;
+      border: 1px solid $color-cerulian-blue;
+
+      svg {
+        color: $color-cerulian-blue;
+      }
+    }
+  }
+
+  &:active {
+    .button--accordion {
+      background-color: $color-endeavour;
+      border-color: $color-transparent;
+
+      svg {
+        color: $color-default-white;
+      }
+    }
+  }
 }
 
 .faq__accordion-element.is-active {
@@ -98,27 +124,6 @@
     color: $color-default-white;
   }
 
-  .button {
-    position: relative;
-    width: 40px;
-    height: 40px;
-
-    &::after {
-      position: absolute;
-      content: "";
-      top: 50%;
-      left: 50%;
-      width: 20px;
-      height: 1px;
-      transform: translateX(-50%);
-      background-color: $color-cerulian-blue;
-    }
-  }
-
-  svg {
-    display: none;
-  }
-
   br {
     display: none;
 
@@ -128,6 +133,29 @@
 
     @include vp-767 {
       display: none;
+    }
+  }
+
+  &:hover,
+  &:focus-visible {
+    .button--accordion {
+      background-color: $color-transparent;
+      border: 1px solid $color-default-white;
+
+      &::after {
+        background-color: $color-default-white;
+      }
+    }
+  }
+
+  &:active {
+    .button--accordion {
+      background-color: $color-default-white;
+      border-color: $color-transparent;
+
+      &::after {
+        background-color: $color-cerulian-blue;
+      }
     }
   }
 }

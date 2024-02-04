@@ -41,6 +41,7 @@
 
 .contacts-item__link {
   color: $color-default-white;
+  border-bottom: 1px solid $color-transparent;
 
   @include vp-1439 {
     @include text-regular-tablet;
@@ -48,5 +49,16 @@
 
   @include vp-767 {
     @include text-regular-mobile;
+  }
+
+  &:hover,
+  &:focus-visible {
+    border-color: $color-default-white;
+    cursor: pointer;
+  }
+
+  &:active {
+    border-color: $color-transparent;
+    opacity: 0.8;
   }
 }
