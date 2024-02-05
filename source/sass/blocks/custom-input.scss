@@ -54,7 +54,7 @@
       border-radius: 8px;
       outline: none;
 
-      transition: border 0.3s ease;
+      // transition: border 0.3s ease;
 
       // @media screen and (max-width: 767px) {
       //   max-width: unset;
@@ -62,11 +62,11 @@
       // }
 
       &:hover {
-        border: 2px solid rgba(#000000, 0.5);
+        border: 1px solid $color-default-white;
       }
 
       &:focus {
-        border: 2px solid rgba(#000000, 0.8);
+        border: 1px solid $color-default-white;
       }
     }
 

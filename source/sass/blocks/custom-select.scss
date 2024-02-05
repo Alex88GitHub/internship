@@ -85,11 +85,11 @@
     transition: border 0.3s ease;
 
     &:hover {
-      border: 2px solid rgba(0, 0, 0, 0.5);
+      border: 1px solid $color-default-white;
     }
 
     &:focus {
-      border: 2px solid rgba(0, 0, 0, 0.8);
+      border: 1px solid $color-default-white;
     }
 
     &:disabled {
