@@ -36,7 +36,6 @@
   z-index: 1;
   width: 40%;
   padding: 70px 74px 41px;
-  color: $color-default-white;
   background-color: $color-cerulian-blue;
   border-radius: 16px;
 
@@ -71,6 +70,7 @@
   @include h3-desktop;
   margin-bottom: 25px;
   padding-top: 12px;
+  color: $color-default-white;
 
   @include vp-1439 {
     @include h3-tablet;
@@ -81,6 +81,16 @@
   @include vp-767 {
     @include h3-mobile;
     margin-bottom: 17px;
+  }
+
+  &--modal {
+    margin-bottom: 20px;
+    color: $color-cerulian-blue;
+    text-align: center;
+
+    @include vp-767 {
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -97,6 +107,12 @@
   @include vp-767 {
     @include text-regular-mobile;
     margin: 0 0 26px;
+  }
+
+  &--modal {
+    color: $color-default-black;
+    text-align: center;
+    opacity: 1;
   }
 }
 
@@ -215,6 +231,18 @@ form > div {
   }
 }
 
-.feedback__button {
-  width: 100%;
+.feedback__button-modal {
+  display: flex;
+  margin: 0 auto;
+
+  span {
+    @include vp-767 {
+      width: 100%;
+    }
+  }
+
+  @include vp-767 {
+    width: 100%;
+    margin: 0;
+  }
 }

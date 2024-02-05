@@ -33,7 +33,7 @@
 
     cursor: pointer;
 
-    span {
+    .custom-toggle__label {
       @include text-xxsmall-desktop;
       display: block;
       margin:0;
@@ -69,7 +69,8 @@
     }
   }
 
-  &--checkbox {
+  &--checkbox,
+  &--checkbox-modal {
     .custom-toggle__icon {
       position: relative;
       display: block;
@@ -92,7 +93,7 @@
         width: 20px;
         height: 20px;
 
-        background-color: rgba(#2c39f2, 0);
+        // background-color: rgba(#2c39f2, 0);
 
         transform: translate(-50%, -50%);
 
@@ -101,12 +102,42 @@
     }
 
     input {
+
       &:disabled + .custom-toggle__icon {
         background-color: $color-white-60;
       }
     }
   }
 
+  &--checkbox-modal {
+    label {
+      .custom-toggle__label--modal {
+        color: $color-default-black;
+        opacity: 0.9;
+      }
+
+      &:hover,
+      &:focus {
+        .custom-toggle__icon--modal {
+          border-color: $color-cerulian-blue;
+        }
+    }
+
+
+
+      input:checked + .custom-toggle__icon--modal {
+        background-color: $color-cerulian-blue;
+
+        &::before {
+          background-color: $color-default-white;
+        }
+      }
+    }
+
+    .custom-toggle__icon {
+      border: 1px solid $color-cerulian-blue-60;
+    }
+  }
 
   // &--radio {
   //   .custom-toggle__icon {
@@ -164,7 +195,7 @@
 
   &.is-invalid {
     label span {
-      color: #ff1553;
+      color: $color-wild-watermelon;
     }
   }
 
@@ -174,7 +205,7 @@
     bottom: -5px;
 
     &.is-invalid {
-      color: #ff0000;
+      color: $color-wild-watermelon;
     }
 
     &.is-valid {

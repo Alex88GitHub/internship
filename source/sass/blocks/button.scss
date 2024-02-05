@@ -309,6 +309,8 @@
   }
 
   &--submit {
+    width: 100%;
+
     span {
       @include text-button-desktop;
       width: 100%;

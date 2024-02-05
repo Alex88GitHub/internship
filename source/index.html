@@ -249,7 +249,7 @@
               <p>Наша деятельность направлена на повышение квалификации молодых специалистов на ранних и средних стадиях
                 карьеры, предоставляя им инструменты для решения сложных проблем, с которыми сталкиваются в мире. Цель
                 центра — наделить этих людей способностью инициировать значимые изменения.</p>
-              <button class="about__button button button--primary">
+              <button class="about__button button button--primary" type="button" data-open-modal="modal">
                 <span class="button__text">Подробнее о проекте</span>
                 <div class="button__icon button__icon--arrow">
                   <svg width="10" height="10" role="img">
@@ -443,12 +443,12 @@
           <!-- <div class="programs__scrollbar-wrapper"> -->
           <div class="programs__scrollbar swiper-scrollbar" data-slider="programs-scrollbar"></div>
           <div class="programs__button-wrapper">
-            <button class="programs__button-prev swiper-button-prev" data-slider="programs-prev-button">
+            <button class="programs__button-prev swiper-button-prev" data-slider="programs-prev-button" type="button">
               <svg width="11" height="11" role="img">
                 <use href="__spritemap#sprite-arrow-left"></use>
               </svg>
             </button>
-            <button class="programs__button-next swiper-button-next" data-slider="programs-next-button">
+            <button class="programs__button-next swiper-button-next" data-slider="programs-next-button" type="button">
               <svg width="11" height="11" role="img">
                 <use href="__spritemap#sprite-arrow-right"></use>
               </svg>
@@ -719,12 +719,12 @@
             </div>
           </div>
           <div class="news__pagination-wrapper swiper-pagination" data-slider="news-pagination"></div>
-          <button class="news__button-prev swiper-button-prev" data-slider="news-prev-button">
+          <button class="news__button-prev swiper-button-prev" data-slider="news-prev-button" type="button">
             <svg width="11" height="11" role="img">
               <use href="__spritemap#sprite-arrow-left"></use>
             </svg>
           </button>
-          <button class="news__button-next swiper-button-next" data-slider="news-next-button">
+          <button class="news__button-next swiper-button-next" data-slider="news-next-button" type="button">
             <svg width="10" height="10" role="img">
               <use href="__spritemap#sprite-arrow-right"></use>
             </svg>
@@ -738,7 +738,7 @@
             <div class="faq__accordion-element" data-accordion="element">
               <div class="faq__accordion-title-wrapper">
                 <h3>Кто организатор? Какие сроки у программы?</h3>
-                <button class="faq__button button button--accordion" data-accordion="button">
+                <button class="faq__button button button--accordion" type="button" data-accordion="button">
                   <svg width="18" height="18" role="img">
                     <use href="__spritemap#sprite-plus-icon"></use>
                   </svg>
@@ -753,7 +753,7 @@
             <div class="faq__accordion-element" data-accordion="element">
               <div class="faq__accordion-title-wrapper">
                 <h3>Что такое грант на обучение?</h3>
-                <button class="faq__button button button--accordion" data-accordion="button">
+                <button class="faq__button button button--accordion" type="button" data-accordion="button">
                   <svg width="18" height="18" role="img">
                     <use href="__spritemap#sprite-plus-icon"></use>
                   </svg>
@@ -768,7 +768,7 @@
             <div class="faq__accordion-element is-active" data-accordion="element">
               <div class="faq__accordion-title-wrapper">
                 <h3>Как определяется стоимость программы?</h3>
-                <button class="faq__button button button--accordion" data-accordion="button">
+                <button class="faq__button button button--accordion" type="button" data-accordion="button">
                   <svg width="18" height="18" role="img">
                     <use href="__spritemap#sprite-plus-icon"></use>
                   </svg>
@@ -786,7 +786,7 @@
             <div class="faq__accordion-element faq__accordion-element--two-line" data-accordion="element">
               <div class="faq__accordion-title-wrapper">
                 <h3>Признаётся ли учеба в рамках проекта<br> для дальнейшего обучения?</h3>
-                <button class="faq__button button button--accordion" data-accordion="button">
+                <button class="faq__button button button--accordion" type="button" data-accordion="button">
                   <svg width="18" height="18" role="img">
                     <use href="__spritemap#sprite-plus-icon"></use>
                   </svg>
@@ -802,7 +802,7 @@
             <div class="faq__accordion-element faq__accordion-element--two-line" data-accordion="element">
               <div class="faq__accordion-title-wrapper">
                 <h3>Как выглядит полный процесс регистрации <br>на программу «Стажировка»?</h3>
-                <button class="faq__button button button--accordion" data-accordion="button">
+                <button class="faq__button button button--accordion" type="button" data-accordion="button">
                   <svg width="18" height="18" role="img">
                     <use href="__spritemap#sprite-plus-icon"></use>
                   </svg>
@@ -917,12 +917,12 @@
           <div class="reviews__scrollbar-wrapper">
             <div class="reviews__scrollbar swiper-scrollbar" data-slider="reviews-scrollbar"></div>
             <div class="reviews__button-wrapper">
-              <button class="reviews__button-prev swiper-button-prev" data-slider="reviews-prev-button">
+              <button class="reviews__button-prev swiper-button-prev" type="button" data-slider="reviews-prev-button">
                 <svg width="11" height="11" role="img">
                   <use href="__spritemap#sprite-arrow-left"></use>
                 </svg>
               </button>
-              <button class="reviews__button-next swiper-button-next" data-slider="reviews-next-button">
+              <button class="reviews__button-next swiper-button-next" type="button" data-slider="reviews-next-button">
                 <svg width="10" height="10" role="img">
                   <use href="__spritemap#sprite-arrow-right"></use>
                 </svg>
@@ -1016,13 +1016,14 @@
                   <button class="custom-select__button" type="button">
                     <span class="custom-select__text"></span>
                     <span class="custom-select__icon">
-                      <svg width="16" height="16" role="img">
+                      <!-- <svg width="16" height="16" role="img">
                         <use href="__spritemap#sprite-arrow-down-icon"></use>
-                      </svg>
+                      </svg> -->
                     </span>
                   </button>
                   <ul class="custom-select__list" role="listbox">
-                    <li class="custom-select__item active" tabindex="0" data-selext-value=""></li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="" role="option"
+                      aria-selected="false"></li>
                     <li class="custom-select__item" tabindex="0" data-select-value="Ekaterinburg" role="option"
                       aria-selected="false">Екатеринбург</li>
                     <li class="custom-select__item" tabindex="0" data-select-value="Moscow" role="option"
@@ -1030,12 +1031,6 @@
                     <li class="custom-select__item" tabindex="0" data-select-value="St.Petersburg" role="option"
                       aria-selected="false">Санкт-Петербург</li>
                   </ul>
-                  <select name="city" tabindex="-1" aria-hidden="true">
-                    <option value=""></option>
-                    <option value="Ekaterinburg">Екатеринбург</option>
-                    <option value="Moscow">Москва</option>
-                    <option value="St.Petersburg">Санкт-Петербург</option>
-                  </select>
                 </div>
                 <div class="custom-toggle custom-toggle--checkbox" data-required data-validate-type="checkbox">
                   <label>
@@ -1044,7 +1039,7 @@
                     <span class="custom-toggle__label">Я согласен на обработку моих персональных данных</span>
                   </label>
                 </div>
-                <button class="feedback__button button button--primary-dark button--submit" type="submit">
+                <button class="button button--primary-dark button--submit" type="submit">
                   <span>Отправить</span>
                   <div class="button__icon button__icon--dark button__icon--arrow">
                     <svg width="10" height="10" role="img">
@@ -1069,22 +1064,22 @@
             </a>
             <ul class="footer__menu-list menu-list">
               <li class="menu-list__item menu-item">
-                <a class="menu-item__link" href="#">О проекте</a>
+                <a class="menu-item__link" href="#about">О проекте</a>
               </li>
               <li class="menu-list__item menu-item">
-                <a class="menu-item__link" href="#">Программы</a>
+                <a class="menu-item__link" href="#programs">Программы</a>
               </li>
               <li class="menu-list__item menu-item">
-                <a class="menu-item__link" href="#">Как поехать</a>
+                <a class="menu-item__link" href="#grant">Как поехать</a>
               </li>
               <li class="menu-list__item menu-item">
-                <a class="menu-item__link" href="#">Отзывы</a>
+                <a class="menu-item__link" href="#reviews">Отзывы</a>
               </li>
               <li class="menu-list__item menu-item">
-                <a class="menu-item__link" href="#">Новости</a>
+                <a class="menu-item__link" href="#news">Новости</a>
               </li>
               <li class="menu-list__item menu-item">
-                <a class="menu-item__link" href="#" data-menu="link">Контакты</a>
+                <a class="menu-item__link" href="#contacts" data-menu="link">Контакты</a>
               </li>
             </ul>
           </div>
@@ -1118,6 +1113,79 @@
         </div>
       </div>
     </footer>
+  </div>
+  <div class="modal" data-modal="modal" data-scroll-lock-scrollable>
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <section class="modal__feedback feedback">
+          <h2 class="visually-hidden">Окно c формой обратной связи</h2>
+          <button class="modal__close-button" type="button" data-close-modal="">
+            <svg width="22" height="22" role="img">
+              <use href="__spritemap#sprite-close-icon"></use>
+            </svg>
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
+          <h3 class="feedback__title feedback__title--modal">Напишите нам</h3>
+          <p class="feedback__description feedback__description--modal">Оставьте ваши контакты, если у вас остались
+            вопросы — мы на них ответим!
+          </p>
+          <div data-form-validate data-callback="base">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <div class="custom-input custom-input--modal" data-required data-validate-type="text">
+                <label>
+                  <span>Имя</span>
+                  <input type="text" name="name" autocomplete="off" required>
+                </label>
+              </div>
+              <div class="custom-input custom-input--modal" data-required data-validate-type="phone">
+                <label>
+                  <span>Телефон</span>
+                  <input type="tel" name="phone" autocomplete="off" required>
+                </label>
+              </div>
+              <div class="custom-select custom-select--modal" data-select data-name="city" data-validate-type="select"
+                data-required>
+                <span class="custom-select__label custom-select__label--modal">Выберете город</span>
+                <button class="custom-select__button custom-select__button--modal" type="button">
+                  <span class="custom-select__text custom-select__text--modal"></span>
+                  <span class=" custom-select__icon custom-select__icon--modal">
+                    <!-- <svg width="16" height="16" role="img">
+                      <use href="__spritemap#sprite-arrow-down-icon"></use>
+                    </svg> -->
+                  </span>
+                </button>
+                <ul class="custom-select__list custom-select__list--modal" role="listbox">
+                  <li class="custom-select__item active" tabindex="0" data-selext-value=""></li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="Ekaterinburg" role="option"
+                    aria-selected="false">Екатеринбург</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="Moscow" role="option"
+                    aria-selected="false">Москва</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="St.Petersburg" role="option"
+                    aria-selected="false">Санкт-Петербург</li>
+                </ul>
+              </div>
+              <div class="custom-toggle custom-toggle--checkbox-modal" data-required data-validate-type="checkbox">
+                <label>
+                  <input type="checkbox" name="user-agreement" value="user-agree" aria-invalid="true" required>
+                  <span class="custom-toggle__icon custom-toggle__icon--modal"></span>
+                  <span class="custom-toggle__label custom-toggle__label--modal">Я согласен на обработку моих
+                    персональных данных</span>
+                </label>
+              </div>
+              <button class="feedback__button-modal button button--primary" type="submit">
+                <span>Отправить</span>
+                <div class="button__icon button__icon button__icon--arrow">
+                  <svg width="10" height="10" role="img">
+                    <use href="__spritemap#sprite-arrow-button-icon"></use>
+                  </svg>
+                </div>
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
   </div>
   <script type="module" src="js/main.js"></script>
 </body>
