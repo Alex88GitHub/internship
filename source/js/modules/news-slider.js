@@ -8,7 +8,6 @@ const pagination = document.querySelector('[data-slider="news-pagination"]');
 export const newsSlider = () => {
   new Swiper(sliderEl, {
     loop: false,
-    // autoHeight: false,
     navigation: {
       prevEl: buttonPrev,
       nextEl: buttonNext,
@@ -20,12 +19,10 @@ export const newsSlider = () => {
         return `<span class="${ className }">${ index + 1 }</span>`;
       },
       bulletClass: 'news__pagination',
-      // bulletClassActive: 'news__pagination.swiper-pagination-bullet-active',
     },
     slidesPerView: 'auto',
     breakpoints: {
       320: {
-        // slidesPerView: 1,
         spaceBetween: 20,
         grid: {
           rows: 2,
@@ -33,14 +30,12 @@ export const newsSlider = () => {
         },
       },
       768: {
-        // slidesPerView: 'auto',
         spaceBetween: 30,
         grid: {
           rows: 2,
         },
       },
       1440: {
-        // slidesPerView: 'auto',
         allowTouchMove: false,
         spaceBetween: 32,
         grid: {
@@ -50,7 +45,6 @@ export const newsSlider = () => {
     },
   });
 };
-
 
 const tabs = document.querySelectorAll('[data-tabs="button"]');
 

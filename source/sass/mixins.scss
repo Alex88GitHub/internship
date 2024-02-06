@@ -1,6 +1,5 @@
-//TYPOGRAPHY
+// DESKTOP
 
-//-------------------DESKTOP-----------------//
 @mixin h1-desktop {
   font-size: $fz-h1-desktop;
   line-height: $lh-h1-desktop;
@@ -78,7 +77,7 @@
   text-transform: uppercase;
 }
 
-//-------------------TABLET-----------------//
+// TABLET
 
 @mixin h1-tablet {
   font-size: $fz-h1-tablet;
@@ -145,15 +144,7 @@
   line-height: $lh-small-tablet;
 }
 
-// @mixin text-button-tablet {
-//   font-size: $fz-small-tablet;
-//   line-height: $fz-small-tablet;
-//   font-weight: $fw-medium;
-//   letter-spacing: 0.28px;
-//   text-transform: uppercase;
-// }
-
-//-------------------MOBILE-----------------//
+// MOBILE
 
 @mixin h1-mobile {
   font-size: $fz-h1-mobile;

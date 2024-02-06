@@ -1,8 +1,4 @@
 import Swiper from 'swiper/bundle';
-// import {Pagination} from 'swiper/modules';
-
-// const slider = document.querySelector('[data-slider="hero-slider"]');
-// // const pagination = slider.querySelector('[data-slider="hero-pagination"]');
 
 export const reviewsSlider = () => {
   const sliderEl = document.querySelector('[data-slider="reviews-slider"]');

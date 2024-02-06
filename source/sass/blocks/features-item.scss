@@ -22,22 +22,26 @@
 
   h4 {
     @include h5-desktop;
+
     margin-top: 4px;
     min-width: 135px;
 
     @include vp-1439 {
       @include h5-tablet;
-      max-width: 197px
+
+      max-width: 197px;
     }
 
     @include vp-767 {
       @include h5-mobile;
+
       max-width: initial;
     }
   }
 
   p {
     @include text-small-desktop;
+
     margin: 0;
     color: $color-alabaster;
 
@@ -48,29 +52,23 @@
     @include vp-767 {
       @include text-small-mobile;
     }
+  }
 
-    br {
-      @include vp-1439 {
-        display: none;
-      }
+  p br {
+    @include vp-1439 {
+      display: none;
     }
   }
 
-  &--price {
-    h4 {
-      br {
-        @include vp-767{
-          display: none;
-        }
-      }
+  &--price h4 br {
+    @include vp-767 {
+      display: none;
     }
+  }
 
-    p {
-      br {
-        @include vp-767{
-          display: block;
-        }
-      }
+  &--price p br {
+    @include vp-767 {
+      display: block;
     }
   }
 }

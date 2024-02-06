@@ -8,7 +8,6 @@ const scrollbar = document.querySelector('[data-slider="programs-scrollbar"]');
 export const programsSlider = () => {
   new Swiper(sliderEl, {
     loop: false,
-    // autoHeight: false,
     navigation: {
       prevEl: buttonPrev,
       nextEl: buttonNext,

@@ -14,15 +14,16 @@
     border: 1px solid $color-cerulian-blue;
     border-radius: 30px;
 
-    span {
-      @include text-button-desktop;
-      color: $color-cerulian-blue;
-      text-transform: uppercase;
-    };
-
     &:hover {
       cursor: pointer;
     }
+  }
+
+  &--menu span {
+    @include text-button-desktop;
+
+    color: $color-cerulian-blue;
+    text-transform: uppercase;
   }
 
   &--menu.is-active {
@@ -30,18 +31,18 @@
     background-color: $color-cerulian-blue;
     justify-content: space-between;
     border-color: $color-transparent;
+  }
 
-    span {
-      color: $color-default-white;
-    }
+  &--menu.is-active span {
+    color: $color-default-white;
+  }
 
-    .button__icon {
-      background-color: $color-default-white;
-    }
+  &--menu.is-active .button__icon {
+    background-color: $color-default-white;
+  }
 
-    svg {
-      color: $color-cerulian-blue;
-    }
+  &--menu.is-active svg {
+    color: $color-cerulian-blue;
   }
 
   &--primary {
@@ -60,46 +61,45 @@
     &:hover,
     &:focus-visible {
       background-color: $color-cerulian-blue;
-
-      .button__text {
-        color: $color-default-white;
-      }
-
-      .button__icon {
-        background-color: $color-default-white;
-      }
-
-      svg {
-        rotate: 45deg;
-        color: $color-cerulian-blue;
-      }
-
       cursor: pointer;
     }
 
-    &:active {
-      .button__text,
-      svg {
-        opacity: 0.7;
-      }
+    &:hover .button__text,
+    &:focus-visible .button__text {
+      color: $color-default-white;
     }
 
-    &--disabled,
+    &:hover .button__icon,
+    &:focus-visible .button__icon {
+      background-color: $color-default-white;
+    }
+
+    &:hover svg,
+    &:focus-visible svg {
+      rotate: 45deg;
+      color: $color-cerulian-blue;
+    }
+
+    &:active .button__text,
+    &:active svg {
+      opacity: 0.7;
+    }
+
     &:disabled {
       border-color: $color-mischka;
       pointer-events: none;
+    }
 
-      .button__icon {
-        background-color: $color-mischka;
-      }
+    &:disabled .button__icon {
+      background-color: $color-mischka;
+    }
 
-      .button__text {
-        color: $color-mischka;
-      }
+    &:disabled .button__text {
+      color: $color-mischka;
+    }
 
-      svg {
-        opacity: 0.6;
-      }
+    &:disabled svg {
+      opacity: 0.6;
     }
   }
 
@@ -118,51 +118,50 @@
     &:hover,
     &:focus-visible {
       background-color: $color-default-white;
-
-      .button__text {
-        color: $color-cerulian-blue;
-      }
-
-      .button__icon {
-        background-color: $color-cerulian-blue;
-      }
-
-      svg {
-        rotate: 45deg;
-        color: $color-default-white;
-      }
-
       cursor: pointer;
     }
 
-    &:active {
-      .button__text,
-      svg {
-        opacity: 0.7;
-      }
+    &:hover .button__text,
+    &:focus-visible .button__text {
+      color: $color-cerulian-blue;
     }
 
-    &--disabled,
+    &:hover .button__icon,
+    &:focus-visible .button__icon {
+      background-color: $color-cerulian-blue;
+    }
+
+    &:hover svg,
+    &:focus-visible svg {
+      rotate: 45deg;
+      color: $color-default-white;
+    }
+
+    &:active .button__text,
+    &:active svg {
+      opacity: 0.7;
+    }
+
     &:disabled {
       border-color: $color-mischka;
       pointer-events: none;
-
-      .button__icon {
-        background-color: $color-mischka;
-      }
-
-      .button__text {
-        color: $color-mischka;
-      }
-
-      svg {
-        opacity: 0.6;
-      }
     }
 
-    .button__text {
-      color: $color-default-white;
+    &:disabled .button__icon {
+      background-color: $color-mischka;
     }
+
+    &:disabled .button__text {
+      color: $color-mischka;
+    }
+
+    &:disabled svg {
+      opacity: 0.6;
+    }
+  }
+
+  &--primary-dark .button__text {
+    color: $color-default-white;
   }
 
   &--secondary {
@@ -175,24 +174,20 @@
     &:hover,
     &:focus-visible {
       background-color: $color-default-white;
-
-      svg {
-        rotate: 45deg;
-        color: $color-cerulian-blue;
-      }
     }
 
-    &:active {
-      svg {
-        opacity: 0.7;
-      }
+    &:hover svg,
+    &:focus-visible svg {
+      rotate: 45deg;
+      color: $color-cerulian-blue;
     }
 
-    &--disabled,
-    &:disabled {
-      .button__icon {
-        background-color: $color-mischka;
-      }
+    &:active svg {
+      opacity: 0.7;
+    }
+
+    &:disabled .button__icon {
+      background-color: $color-mischka;
     }
   }
 
@@ -204,6 +199,7 @@
 
   &--tabs {
     @include text-button-desktop;
+
     padding: 14px 26px;
     color: $color-cerulian-blue-60;
     background-color: $color-transparent;
@@ -215,6 +211,7 @@
 
     @include vp-767 {
       @include text-button-mobile;
+
       padding: 8px 13px 7px;
     }
 
@@ -243,98 +240,70 @@
 
     &:hover,
     &:focus-visible {
-      // background-color: $color-transparent;
-      // border: 1px solid $color-cerulian-blue;
       cursor: pointer;
-
-      // svg {
-      //   color: $color-cerulian-blue;
-      // }
     }
 
-    // &:active {
-    //   background-color: $color-endeavour;
-    //   border-color: $color-transparent;
-
-    //   svg {
-    //     color: $color-default-white;
-    //   }
-    // }
-
-    &--disabled,
     &:disabled {
       background-color: $color-mischka;
       pointer-events: none;
+    }
 
-      svg {
-        opacity: 0.6;
-      }
+    &:disabled svg {
+      opacity: 0.6;
     }
   }
 
   &--accordion.is-active {
     flex-shrink: 0;
     background-color: $color-default-white;
+  }
 
-    &::after {
-      position: absolute;
-      content: "";
-      top: 50%;
-      left: 50%;
-      width: 20px;
-      height: 1px;
-      transform: translateX(-50%);
-      background-color: $color-cerulian-blue;
-    }
+  &--accordion.is-active::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 1px;
+    transform: translateX(-50%);
+    background-color: $color-cerulian-blue;
+  }
 
-    svg {
-      display: none;
-    }
+  &--accordion.is-active svg {
+    display: none;
+  }
 
-    &:hover,
-    &:focus-visible {
-      // background-color: $color-transparent;
-      // border: 1px solid $color-default-white;
-      cursor: pointer;
-
-      // &::after {
-      //   background-color: $color-default-white;
-      // }
-    }
-
-    // &:active {
-    //   background-color: $color-default-white;
-    //   border-color: $color-transparent;
-
-    //   &::after {
-    //     background-color: $color-cerulian-blue;
-    //   }
-    // }
+  &--accordion.is-active:hover,
+  &--accordion.is-active:focus-visible {
+    cursor: pointer;
   }
 
   &--submit {
     width: 100%;
+  }
 
-    .button__text {
-      @include text-button-desktop;
-      width: 100%;
-      display: block;
-      text-transform: uppercase;
+  &--submit .button__text {
+    @include text-button-desktop;
 
-      @include vp-767 {
-        @include text-button-mobile;
-      }
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+
+    @include vp-767 {
+      @include text-button-mobile;
     }
   }
 }
 
 .button__text {
   @include text-button-desktop;
+
   display: block;
   color: $color-cerulian-blue;
 
   @include vp-767 {
     @include text-button-mobile;
+
     width: 100%;
   }
 }
@@ -356,9 +325,9 @@
 
   &--dark {
     background-color: $color-default-white;
+  }
 
-    svg {
-      color: $color-cerulian-blue;
-    }
+  &--dark svg {
+    color: $color-cerulian-blue;
   }
 }

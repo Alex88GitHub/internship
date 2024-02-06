@@ -69,6 +69,7 @@
 
 .contacts__title {
   @include h2-desktop;
+
   padding-top: 5px;
 
   @include vp-1439 {

@@ -1,6 +1,3 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from '../../node_modules/swiper';
-// import {Navigation, Pagination} from '../../node_modules/swiper/modules';
 import './modules/init-burger-menu';
 import './utils/scroll-lock';
 import './utils/focus-lock';
@@ -10,13 +7,6 @@ import {StickyHeader} from './vendor/sticky-header';
 import {CustomSelect} from './vendor/custom-select';
 import {Form} from './vendor/form-validate/form';
 import {initModals} from './modules/init-modals';
-
-// import 'swiper/css';
-
-
-// initSliders();
-
-
 
 window.addEventListener('DOMContentLoaded', () => {
   const stickyHeader = new StickyHeader;

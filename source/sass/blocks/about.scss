@@ -20,16 +20,19 @@
 
 .about__title {
   @include h2-desktop;
+
   padding: 3px 133px 19px 0;
   color: $color-cerulian-blue;
 
   @include vp-1439 {
     @include h2-tablet;
+
     padding: 0 28px 13px 0;
   }
 
   @include vp-767 {
     @include h2-mobile;
+
     padding: 2px 50px 6px 1px;
   }
 }
@@ -52,6 +55,7 @@
 
   p {
     @include text-big-desktop;
+
     margin: 0;
 
     @include vp-1439 {
@@ -61,11 +65,11 @@
     @include vp-767 {
       @include text-big-mobile;
     }
+  }
 
-    br {
-      @include vp-1439 {
-        display: none;
-      }
+  p br {
+    @include vp-1439 {
+      display: none;
     }
   }
 }
@@ -90,6 +94,7 @@
 
   h3 {
     @include h3-desktop;
+
     color: $color-cerulian-blue;
 
     @include vp-1439 {
@@ -103,15 +108,18 @@
 
   p {
     margin: 0;
+
     @include text-regular-desktop;
 
     @include vp-1439 {
       @include text-regular-tablet;
+
       margin-bottom: 13px;
     }
 
     @include vp-767 {
       @include text-regular-mobile;
+
       margin-bottom: 14px;
     }
   }

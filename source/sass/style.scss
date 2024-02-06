@@ -1,12 +1,11 @@
 // Vendor
-// ---------------------------------
 
 @import "vendor/normalize";
 @import "vendor/data-accordion";
 @import "swiper/css/bundle";
 
-//Global
-// ----------------------------------
+// Global
+
 @import "global/fonts";
 @import "variables";
 @import "mixins";
@@ -14,13 +13,11 @@
 @import "global/utils";
 @import "global/container";
 
-//Blocks
-//---------------------------------
+// Blocks
+
 @import "blocks/custom-input";
 @import "blocks/custom-select";
 @import "blocks/custom-toggle";
-
-
 @import "blocks/button";
 @import "blocks/header";
 @import "blocks/sub-menu-item";
@@ -29,13 +26,11 @@
 @import "blocks/menu-list";
 @import "blocks/menu-nav";
 @import "blocks/hero";
-
 @import "blocks/features-item";
 @import "blocks/features-list";
 @import "blocks/about";
 @import "blocks/requirements-item";
 @import "blocks/requirements-list";
-
 @import "blocks/programs";
 @import "blocks/grant";
 @import "blocks/news";
@@ -44,7 +39,6 @@
 @import "blocks/contacts";
 @import "blocks/feedback";
 @import "blocks/footer";
-
 @import "blocks/faq";
 @import "blocks/reviews-slide";
 @import "blocks/reviews";

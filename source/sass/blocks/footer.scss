@@ -17,7 +17,6 @@
     padding-bottom: 60px;
     padding-left: 0;
     padding-right: 0;
-    // box-sizing: content-box;
   }
 }
 
@@ -90,6 +89,7 @@
 
 .footer__menu-list .menu-item__link {
   @include text-regular-desktop;
+
   display: block;
   letter-spacing: initial;
   color: $color-default-black;
@@ -202,6 +202,7 @@
 
 .footer__copyright-text {
   @include text-xsmall-desktop;
+
   opacity: 0.6;
 
   @include vp-1439 {
@@ -211,7 +212,9 @@
 
 .footer__copyright-link {
   position: relative;
+
   @include text-xsmall-desktop;
+
   color: $color-default-black;
 
   &::after {
