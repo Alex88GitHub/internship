@@ -218,6 +218,14 @@ form > div {
     margin-bottom: 21px;
   }
 
+  &:has(> .custom-input__wrapper) {
+    margin-bottom: 9px;
+
+    @include vp-1439 {
+
+    }
+  }
+
   &:last-of-type {
     margin-bottom: 44px;
 
@@ -235,11 +243,11 @@ form > div {
   display: flex;
   margin: 0 auto;
 
-  span {
-    @include vp-767 {
-      width: 100%;
-    }
-  }
+  // .butt {
+  //   @include vp-767 {
+  //     width: 100%;
+  //   }
+  // }
 
   @include vp-767 {
     width: 100%;

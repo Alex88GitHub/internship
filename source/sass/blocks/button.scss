@@ -61,11 +61,11 @@
     &:focus-visible {
       background-color: $color-cerulian-blue;
 
-      span {
+      .button__text {
         color: $color-default-white;
       }
 
-      div {
+      .button__icon {
         background-color: $color-default-white;
       }
 
@@ -78,7 +78,7 @@
     }
 
     &:active {
-      span,
+      .button__text,
       svg {
         opacity: 0.7;
       }
@@ -89,11 +89,11 @@
       border-color: $color-mischka;
       pointer-events: none;
 
-      > div {
+      .button__icon {
         background-color: $color-mischka;
       }
 
-      span {
+      .button__text {
         color: $color-mischka;
       }
 
@@ -119,11 +119,11 @@
     &:focus-visible {
       background-color: $color-default-white;
 
-      span {
+      .button__text {
         color: $color-cerulian-blue;
       }
 
-      div {
+      .button__icon {
         background-color: $color-cerulian-blue;
       }
 
@@ -136,7 +136,7 @@
     }
 
     &:active {
-      span,
+      .button__text,
       svg {
         opacity: 0.7;
       }
@@ -147,17 +147,21 @@
       border-color: $color-mischka;
       pointer-events: none;
 
-      > div {
+      .button__icon {
         background-color: $color-mischka;
       }
 
-      span {
+      .button__text {
         color: $color-mischka;
       }
 
       svg {
         opacity: 0.6;
       }
+    }
+
+    .button__text {
+      color: $color-default-white;
     }
   }
 
@@ -186,7 +190,7 @@
 
     &--disabled,
     &:disabled {
-      > div {
+      .button__icon {
         background-color: $color-mischka;
       }
     }
@@ -311,7 +315,7 @@
   &--submit {
     width: 100%;
 
-    span {
+    .button__text {
       @include text-button-desktop;
       width: 100%;
       display: block;
@@ -331,10 +335,12 @@
 
   @include vp-767 {
     @include text-button-mobile;
+    width: 100%;
   }
 }
 
 .button__icon {
+  display: block;
   padding: 13px;
   background-color: $color-cerulian-blue;
   border: none;

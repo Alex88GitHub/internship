@@ -2,7 +2,7 @@ import '../utils/scroll-lock';
 const menuElement = document.querySelector('[data-menu="burger-menu"]');
 const menuButtonElement = document.querySelector('[data-menu="button"]');
 const buttonImageElement = menuButtonElement.querySelector('svg').querySelector('use');
-const overlayElement = document.querySelector('[data-overlay]');
+const overlayElement = document.querySelector('[data-overlay="data-overlay"]');
 const linkElement = document.querySelectorAll('[data-menu="link"]');
 // const bodyElement = document.querySelector('body');
 

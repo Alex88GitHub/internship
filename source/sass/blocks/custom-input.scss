@@ -159,3 +159,31 @@
     }
   }
 }
+
+.custom-input__wrapper {
+  width: 100%;
+
+  label {
+    margin-bottom: 8px;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 98px;
+    padding: 12px 20px;
+    background-color: $color-transparent;
+    border: 1px solid $color-white-30;
+    color: $color-default-white;
+    border-radius: 8px;
+    resize: none;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $color-default-white;
+    }
+
+    &:active {
+      outline: none;
+    }
+  }
+}
