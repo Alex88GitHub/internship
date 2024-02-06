@@ -3,17 +3,33 @@
 // import {Navigation, Pagination} from '../../node_modules/swiper/modules';
 import './modules/init-burger-menu';
 import './utils/scroll-lock';
+import './utils/focus-lock';
 import {initAccordions} from './modules/init-accordion';
 import {initSliders} from './modules/init-sliders';
-// import './vendor/custom-select';
+import {StickyHeader} from './vendor/sticky-header';
 import {CustomSelect} from './vendor/custom-select';
-import { initModals } from './modules/init-modals';
+import {Form} from './vendor/form-validate/form';
+import {initModals} from './modules/init-modals';
 
 // import 'swiper/css';
 
-initAccordions();
-initSliders();
 
-const select = new CustomSelect;
-select.init();
-initModals();
+// initSliders();
+
+
+
+window.addEventListener('DOMContentLoaded', () => {
+  const stickyHeader = new StickyHeader;
+  stickyHeader.init();
+  initSliders();
+
+  window.addEventListener('load', () => {
+    initAccordions();
+    const select = new CustomSelect;
+    select.init();
+    initModals();
+    const form = new Form();
+    window.form = form;
+    form.init();
+  });
+});

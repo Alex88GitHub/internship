@@ -25,6 +25,10 @@
 }
 
 .hero__content-wrapper {
+  @include vp-1439 {
+    width: 97%;
+  }
+
   @include vp-767 {
     display: flex;
     flex-direction: column;
@@ -135,10 +139,14 @@
 }
 
 .hero__link {
-  align-self: center;
+  // align-self: center;
 
-  @include vp-1439 {
-    align-self: flex-start;
+  // @include vp-1439 {
+  //   align-self: flex-start;
+  // }
+
+  @include vp-767 {
+    gap: 20px;
   }
 }
 

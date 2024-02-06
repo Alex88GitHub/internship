@@ -29,8 +29,7 @@ const openMenu = () => {
     link.addEventListener('click', onElementClick);
   });
   overlayElement.addEventListener('click', onElementClick);
-  // window.scrollLock.disableScrolling();
-  // bodyElement.style.overflow = 'hidden';
+  window.scrollLock.disableScrolling();
 };
 
 function closeMenu() {
@@ -42,6 +41,7 @@ function closeMenu() {
     link.removeEventListener('click', onElementClick);
   });
   overlayElement.removeEventListener('click', onElementClick);
+  window.scrollLock.enableScrolling();
 }
 
 export const initBurgerMenu = () => {

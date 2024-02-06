@@ -190,8 +190,12 @@
   }
 
   &.is-invalid {
-    label span {
-      color: $color-wild-watermelon;
+    label .custom-toggle__icon {
+      border-color: $color-wild-watermelon;
+
+      &::before {
+        background-color: $color-wild-watermelon-20;
+      }
     }
   }
 

@@ -18,10 +18,9 @@
 <body>
   <div class="wrapper">
 
-    <header class="header" data-test="slider">
+    <header class="header" data-test="slider" data-header>
       <div class="header__overlay" data-overlay></div>
-      <!-- <div class="container"> -->
-      <div class="header__wrapper">
+      <div class="header__wrapper" data-header="sticky">
         <a class="header__logo" href="">
           <svg width="30" height="30" role="img">
             <use href="__spritemap#sprite-logo"></use>
@@ -99,18 +98,23 @@
           </ul>
         </nav>
       </div>
-
       <div class="hero swiper" data-slider="hero-slider">
         <div class="hero__slider-wrapper swiper-wrapper">
           <div class="hero__slide swiper-slide" data-slider="hero-slide">
             <div class="hero__image-wrapper">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/hero-mobile-1.webp 1x, img/hero-mobile-1@2x.webp 2x" width="320" height="568">
+                <source type="image/webp" media="(max-width: 1439px)"
+                  srcset="img/hero-tablet-1.webp 1x, img/hero-tablet-1@2x.webp 2x" width="768" height="1024">
+                <source type="image/webp" srcset="img/hero-desktop-1.webp 1x, img/hero-desktop-1@2x.webp 2x"
+                  width="1440" height="800">
                 <source media="(max-width: 767px)" srcset="img/hero-mobile-1.jpg 1x, img/hero-mobile-1@2x.jpg 2x"
                   width="320" height="568">
                 <source media="(max-width: 1439px)" srcset="img/hero-tablet-1.jpg 1x, img/hero-tablet-1@2x.jpg 2x"
                   width="768" height="1024">
                 <img src="img/hero-desktop-1.jpg" srcset="img/hero-desktop-1@2x.jpg 2x" width="1440" height="800"
-                  alt="">
+                  alt="Счастливая ученица.">
               </picture>
             </div>
             <div class="hero__container container">
@@ -148,12 +152,18 @@
           <div class="hero__slide swiper-slide" data-slider="hero-slide">
             <div class="hero__image-wrapper">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/hero-mobile-2.webp 1x, img/hero-mobile-2@2x.webp 2x" width="320" height="568">
+                <source type="image/webp" media="(max-width: 1439px)"
+                  srcset="img/hero-tablet-2.webp 1x, img/hero-tablet-2@2x.webp 2x" width="768" height="1024">
+                <source type="image/webp" srcset="img/hero-desktop-2.webp 1x, img/hero-desktop-2@2x.webp 2x"
+                  width="1440" height="800">
                 <source media="(max-width: 767px)" srcset="img/hero-mobile-2.jpg 1x, img/hero-mobile-2@2x.jpg 2x"
                   width="320" height="568">
                 <source media="(max-width: 1439px)" srcset="img/hero-tablet-2.jpg 1x, img/hero-tablet-2@2x.jpg 2x"
                   width="768" height="1024">
                 <img src="img/hero-desktop-2.jpg" srcset="img/hero-desktop-2@2x.jpg 2x" width="1440" height="800"
-                  alt="">
+                  alt="Команда единомышленников.">
               </picture>
             </div>
             <div class="hero__container container">
@@ -191,12 +201,18 @@
           <div class="hero__slide swiper-slide" data-slider="hero-slide">
             <div class="hero__image-wrapper">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/hero-mobile-3.webp 1x, img/hero-mobile-3@2x.webp 2x" width="320" height="568">
+                <source type="image/webp" media="(max-width: 1439px)"
+                  srcset="img/hero-tablet-3.webp 1x, img/hero-tablet-3@2x.webp 2x" width="768" height="1024">
+                <source type="image/webp" srcset="img/hero-desktop-3.webp 1x, img/hero-desktop-3@2x.webp 2x"
+                  width="1440" height="800">
                 <source media="(max-width: 767px)" srcset="img/hero-mobile-3.jpg 1x, img/hero-mobile-3@2x.jpg 2x"
                   width="320" height="568">
                 <source media="(max-width: 1439px)" srcset="img/hero-tablet-3.jpg 1x, img/hero-tablet-3@2x.jpg 2x"
                   width="768" height="1024">
                 <img src="img/hero-desktop-3.jpg" srcset="img/hero-desktop-3@2x.jpg 2x" width="1440" height="800"
-                  alt="">
+                  alt="Мозговой штурм.">
               </picture>
             </div>
             <div class="hero__container container">
@@ -231,12 +247,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="hero__pagination-wrapper">
-          <div class="hero__pagination swiper-pagination" data-slider="hero-pagination"></div>
-          <svg width="26" height="26" role="img">
-            <use href="__spritemap#sprite-angle-right-bottom"></use>
-          </svg>
-        </div> -->
       </div>
     </header>
     <main>
@@ -332,12 +342,18 @@
                   </div>
                 </div>
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/programs-mobile-1.webp 1x, img/programs-mobile-1@2x.webp 2x" width="290" height="400">
+                  <source type="image/webp" media="(max-width: 1439px)"
+                    srcset="img/programs-tablet-1.webp 1x, img/programs-tablet-1@2x.webp 2x" width="324" height="420">
+                  <source type="image/webp" srcset="img/programs-desktop-1.webp 1x, img/programs-desktop-1@2x.webp 2x"
+                    width="392" height="420">
                   <source media="(max-width: 767px)"
                     srcset="img/programs-mobile-1.jpg 1x, img/programs-mobile-1@2x.jpg 2x" width="290" height="400">
                   <source media="(max-width: 1439px)"
                     srcset="img/programs-tablet-1.jpg 1x, img/programs-tablet-1@2x.jpg 2x" width="324" height="420">
                   <img src="img/programs-desktop-1.jpg" srcset="img/programs-desktop-1@2x.jpg 2x" width="392"
-                    height="420" alt="">
+                    height="420" alt="Девушки за работой.">
                 </picture>
                 <div class="programs__overlay"></div>
               </div>
@@ -357,12 +373,18 @@
                   </div>
                 </div>
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/programs-mobile-2.webp 1x, img/programs-mobile-2@2x.webp 2x" width="290" height="400">
+                  <source type="image/webp" media="(max-width: 1439px)"
+                    srcset="img/programs-tablet-2.webp 1x, img/programs-tablet-2@2x.webp 2x" width="324" height="420">
+                  <source type="image/webp" srcset="img/programs-desktop-2.webp 1x, img/programs-desktop-2@2x.webp 2x"
+                    width="392" height="420">
                   <source media="(max-width: 767px)"
                     srcset="img/programs-mobile-2.jpg 1x, img/programs-mobile-2@2x.jpg 2x" width="290" height="400">
                   <source media="(max-width: 1439px)"
                     srcset="img/programs-tablet-2.jpg 1x, img/programs-tablet-2@2x.jpg 2x" width="324" height="420">
                   <img src="img/programs-desktop-2.jpg" srcset="img/programs-desktop-2@2x.jpg 2x" width="392"
-                    height="420" alt="">
+                    height="420" alt="Волонтёр.">
                 </picture>
                 <div class="programs__overlay"></div>
               </div>
@@ -381,12 +403,18 @@
                     </a>
                   </div>
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/programs-mobile-3.webp 1x, img/programs-mobile-3@2x.webp 2x" width="290" height="400">
+                    <source type="image/webp" media="(max-width: 1439px)"
+                      srcset="img/programs-tablet-3.webp 1x, img/programs-tablet-3@2x.webp 2x" width="324" height="420">
+                    <source type="image/webp" srcset="img/programs-desktop-3.webp 1x, img/programs-desktop-3@2x.webp 2x"
+                      width="392" height="420">
                     <source media="(max-width: 767px)"
                       srcset="img/programs-mobile-3.jpg 1x, img/programs-mobile-3@2x.jpg 2x" width="290" height="400">
                     <source media="(max-width: 1439px)"
                       srcset="img/programs-tablet-3.jpg 1x, img/programs-tablet-3@2x.jpg 2x" width="324" height="420">
                     <img src="img/programs-desktop-3.jpg" srcset="img/programs-desktop-3@2x.jpg 2x" width="392"
-                      height="420" alt="">
+                      height="420" alt="Учебный процесс.">
                   </picture>
                   <div class="programs__overlay"></div>
                 </div>
@@ -407,12 +435,18 @@
                   </div>
                 </div>
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/programs-mobile-1.webp 1x, img/programs-mobile-1@2x.webp 2x" width="290" height="400">
+                  <source type="image/webp" media="(max-width: 1439px)"
+                    srcset="img/programs-tablet-1.webp 1x, img/programs-tablet-1@2x.webp 2x" width="324" height="420">
+                  <source type="image/webp" srcset="img/programs-desktop-1.webp 1x, img/programs-desktop-1@2x.webp 2x"
+                    width="392" height="420">
                   <source media="(max-width: 767px)"
                     srcset="img/programs-mobile-1.jpg 1x, img/programs-mobile-1@2x.jpg 2x" width="290" height="400">
                   <source media="(max-width: 1439px)"
                     srcset="img/programs-tablet-1.jpg 1x, img/programs-tablet-1@2x.jpg 2x" width="324" height="420">
                   <img src="img/programs-desktop-1.jpg" srcset="img/programs-desktop-1@2x.jpg 2x" width="392"
-                    height="420" alt="">
+                    height="420" alt="Девушки за работой.">
                 </picture>
                 <div class="programs__overlay"></div>
               </div>
@@ -431,19 +465,24 @@
                     </a>
                   </div>
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/programs-mobile-2.webp 1x, img/programs-mobile-2@2x.webp 2x" width="290" height="400">
+                    <source type="image/webp" media="(max-width: 1439px)"
+                      srcset="img/programs-tablet-2.webp 1x, img/programs-tablet-2@2x.webp 2x" width="324" height="420">
+                    <source type="image/webp" srcset="img/programs-desktop-2.webp 1x, img/programs-desktop-2@2x.webp 2x"
+                      width="392" height="420">
                     <source media="(max-width: 767px)"
                       srcset="img/programs-mobile-2.jpg 1x, img/programs-mobile-2@2x.jpg 2x" width="290" height="400">
                     <source media="(max-width: 1439px)"
                       srcset="img/programs-tablet-2.jpg 1x, img/programs-tablet-2@2x.jpg 2x" width="324" height="420">
                     <img src="img/programs-desktop-2.jpg" srcset="img/programs-desktop-2@2x.jpg 2x" width="392"
-                      height="420" alt="">
+                      height="420" alt="Волонтёр.">
                   </picture>
                   <div class="programs__overlay"></div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- <div class="programs__scrollbar-wrapper"> -->
           <div class="programs__scrollbar swiper-scrollbar" data-slider="programs-scrollbar"></div>
           <div class="programs__button-wrapper">
             <button class="programs__button-prev swiper-button-prev" data-slider="programs-prev-button" type="button">
@@ -470,12 +509,18 @@
             </div>
             <div class="grant__image-wrapper">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/grant-image-mobile.webp 1x, img/grant-image-mobile@2x.webp 2x" width="290" height="200">
+                <source type="image/webp" media="(max-width: 1439px)"
+                  srcset="img/grant-image-tablet.webp 1x, img/grant-image-tablet@2x.webp 2x" width="678" height="375">
+                <source type="image/webp" srcset="img/grant-image-desktop.webp 1x, img/grant-image-desktop@2x.webp 2x"
+                  width="498" height="363">
                 <source media="(max-width: 767px)"
                   srcset="img/grant-image-mobile.jpg 1x, img/grant-image-mobile@2x.jpg 2x" width="290" height="200">
                 <source media="(max-width: 1439px)"
                   srcset="img/grant-image-tablet.jpg 1x, img/grant-image-tablet@2x.jpg 2x" width="678" height="375">
                 <img src="img/grant-image-desktop.jpg" srcset="img/grant-image-desktop@2x.jpg 2x" width="498"
-                  height="363" alt="">
+                  height="363" alt="Указатели на столбе.">
               </picture>
             </div>
           </div>
@@ -534,8 +579,12 @@
                   </div>
                 </div>
                 <picture>
-                  <source media="(max-width: 767px)" srcset="img/news-tablet-1.jpg 1x, img/news-tablet-1@2x.jpg 2x"
-                    width="290" height="330">
+                  <source type="image/webp" media="(max-width: 767px)" width="290" height="330">
+                  <source type="image/webp" media="(max-width: 1439px)"
+                    srcset="img/news-tablet-1.webp 1x, img/news-tablet-1@2x.webp 2x" width="324" height="350">
+                  <source type="image/webp" srcset="img/news-desktop-1.webp 1x, img/news-desktop-1@2x.webp 2x"
+                    width="604" height="400">
+                  <source media="(max-width: 767px)" width="290" height="330">
                   <source media="(max-width: 1439px)" srcset="img/news-tablet-1.jpg 1x, img/news-tablet-1@2x.jpg 2x"
                     width="324" height="350">
                   <img src="img/news-desktop-1.jpg" srcset="img/news-desktop-1@2x.jpg 2x" width="604" height="400"
@@ -557,12 +606,16 @@
                   </div>
                 </div>
                 <picture>
-                  <source media="(max-width: 767px)" srcset="img/news-tablet-2.jpg 1x, img/news-tablet-2@2x.jpg 2x"
-                    width="290" height="330">
+                  <source type="image/webp" media="(max-width: 767px)" width="290" height="330">
+                  <source type="image/webp" media="(max-width: 1439px)"
+                    srcset="img/news-tablet-2.webp 1x, img/news-tablet-2@2x.webp 2x" width="324" height="350">
+                  <source type="image/webp" srcset="img/news-desktop-2.webp 1x, img/news-desktop-2@2x.webp 2x"
+                    width="604" height="400">
+                  <source media="(max-width: 767px)" width="290" height="330">
                   <source media="(max-width: 1439px)" srcset="img/news-tablet-2.jpg 1x, img/news-tablet-2@2x.jpg 2x"
                     width="324" height="350">
                   <img src="img/news-desktop-2.jpg" srcset="img/news-desktop-2@2x.jpg 2x" width="286" height="400"
-                    alt="В библиотеке.">
+                    alt="Побережье.">
                 </picture>
               </div>
               <div class="news__slide swiper-slide" data-slider="news-slide">
@@ -580,11 +633,16 @@
                   </div>
                 </div>
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="290" height="330">
+                  <source type="image/webp" media="(max-width: 1439px)"
+                    srcset="img/news-tablet-3.webp 1x, img/news-tablet-3@2x.webp 2x" width="324" height="350">
+                  <source type="image/webp" srcset="img/news-desktop-3.webp 1x, img/news-desktop-3@2x.webp 2x"
+                    width="604" height="400">
                   <source media="(max-width: 767px)" width="290" height="330">
                   <source media="(max-width: 1439px)" srcset="img/news-tablet-3.jpg 1x, img/news-tablet-3@2x.jpg 2x"
                     width="324" height="350">
                   <img src="img/news-desktop-3.jpg" srcset="img/news-desktop-3@2x.jpg 2x" width="286" height="400"
-                    alt="В библиотеке.">
+                    alt="Значок волонтёра.">
                 </picture>
               </div>
               <div class="news__slide swiper-slide" data-slider="news-slide">
@@ -602,11 +660,16 @@
                   </div>
                 </div>
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="290" height="330">
+                  <source type="image/webp" media="(max-width: 1439px)"
+                    srcset="img/news-tablet-4.webp 1x, img/news-tablet-4@2x.webp 2x" width="324" height="350">
+                  <source type="image/webp" srcset="img/news-desktop-4.webp 1x, img/news-desktop-4@2x.webp 2x"
+                    width="604" height="400">
                   <source media="(max-width: 767px)" width="290" height="330">
                   <source media="(max-width: 1439px)" srcset="img/news-tablet-4.jpg 1x, img/news-tablet-4@2x.jpg 2x"
                     width="324" height="350">
                   <img src="img/news-desktop-4.jpg" srcset="img/news-desktop-4@2x.jpg 2x" width="286" height="400"
-                    alt="В библиотеке.">
+                    alt="Рабочий беспорядок.">
                 </picture>
               </div>
               <div class="news__slide swiper-slide" data-slider="news-slide">
@@ -624,11 +687,16 @@
                   </div>
                 </div>
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="290" height="330">
+                  <source type="image/webp" media="(max-width: 1439px)"
+                    srcset="img/news-tablet-2.webp 1x, img/news-tablet-2@2x.webp 2x" width="324" height="350">
+                  <source type="image/webp" srcset="img/news-desktop-2.webp 1x, img/news-desktop-2@2x.webp 2x"
+                    width="604" height="400">
                   <source media="(max-width: 767px)" width="290" height="330">
                   <source media="(max-width: 1439px)" srcset="img/news-tablet-2.jpg 1x, img/news-tablet-2@2x.jpg 2x"
                     width="324" height="350">
                   <img src="img/news-desktop-2.jpg" srcset="img/news-desktop-2@2x.jpg 2x" width="286" height="400"
-                    alt="В библиотеке.">
+                    alt="Побережье.">
                 </picture>
               </div>
               <div class="news__slide swiper-slide" data-slider="news-slide">
@@ -646,11 +714,16 @@
                   </div>
                 </div>
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="290" height="330">
+                  <source type="image/webp" media="(max-width: 1439px)"
+                    srcset="img/news-tablet-3.webp 1x, img/news-tablet-3@2x.webp 2x" width="324" height="350">
+                  <source type="image/webp" srcset="img/news-desktop-3.webp 1x, img/news-desktop-3@2x.webp 2x"
+                    width="604" height="400">
                   <source media="(max-width: 767px)" width="290" height="330">
                   <source media="(max-width: 1439px)" srcset="img/news-tablet-3.jpg 1x, img/news-tablet-3@2x.jpg 2x"
                     width="324" height="350">
                   <img src="img/news-desktop-3.jpg" srcset="img/news-desktop-3@2x.jpg 2x" width="286" height="400"
-                    alt="В библиотеке.">
+                    alt="Значок волонтёра.">
                 </picture>
               </div>
               <div class="news__slide swiper-slide" data-slider="news-slide">
@@ -668,11 +741,16 @@
                   </div>
                 </div>
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="290" height="330">
+                  <source type="image/webp" media="(max-width: 1439px)"
+                    srcset="img/news-tablet-4.webp 1x, img/news-tablet-4@2x.webp 2x" width="324" height="350">
+                  <source type="image/webp" srcset="img/news-desktop-4.webp 1x, img/news-desktop-4@2x.webp 2x"
+                    width="604" height="400">
                   <source media="(max-width: 767px)" width="290" height="330">
                   <source media="(max-width: 1439px)" srcset="img/news-tablet-4.jpg 1x, img/news-tablet-4@2x.jpg 2x"
                     width="324" height="350">
                   <img src="img/news-desktop-4.jpg" srcset="img/news-desktop-4@2x.jpg 2x" width="286" height="400"
-                    alt="В библиотеке.">
+                    alt="Рабочий беспорядок.">
                 </picture>
               </div>
               <div class="news__slide news__slide--wide swiper-slide" data-slider="news-slide">
@@ -690,6 +768,11 @@
                   </div>
                 </div>
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="290" height="330">
+                  <source type="image/webp" media="(max-width: 1439px)"
+                    srcset="img/news-tablet-1.webp 1x, img/news-tablet-1@2x.webp 2x" width="324" height="350">
+                  <source type="image/webp" srcset="img/news-desktop-1.webp 1x, img/news-desktop-1@2x.webp 2x"
+                    width="604" height="400">
                   <source media="(max-width: 767px)" width="290" height="330">
                   <source media="(max-width: 1439px)" srcset="img/news-tablet-1.jpg 1x, img/news-tablet-1@2x.jpg 2x"
                     width="324" height="350">
@@ -712,11 +795,16 @@
                   </div>
                 </div>
                 <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="290" height="330">
+                  <source type="image/webp" media="(max-width: 1439px)"
+                    srcset="img/news-tablet-4.webp 1x, img/news-tablet-4@2x.webp 2x" width="324" height="350">
+                  <source type="image/webp" srcset="img/news-desktop-4.webp 1x, img/news-desktop-4@2x.webp 2x"
+                    width="604" height="400">
                   <source media="(max-width: 767px)" width="290" height="330">
                   <source media="(max-width: 1439px)" srcset="img/news-tablet-4.jpg 1x, img/news-tablet-4@2x.jpg 2x"
                     width="324" height="350">
                   <img src="img/news-desktop-4.jpg" srcset="img/news-desktop-4@2x.jpg 2x" width="286" height="400"
-                    alt="В библиотеке.">
+                    alt="Рабочий беспорядок.">
                 </picture>
               </div>
             </div>
@@ -832,6 +920,9 @@
                 <div class="reviews-slide__info-wrapper">
                   <div class="reviews-slide__autor-content">
                     <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="60" height="60">
+                      <source type="image/webp" srcset="img/reviews-autor-1.webp 1x, img/reviews-autor-1@2x.jpg 2x"
+                        width="90" height="90">
                       <source media="(max-width: 767px)" width="60" height="60">
                       <img src="img/reviews-autor-1.jpg" srcset="img/reviews-autor-1@2x.jpg 2x" width="90" height="90"
                         alt="Фотография пользователя.">
@@ -861,6 +952,9 @@
                 <div class="reviews-slide__info-wrapper">
                   <div class="reviews-slide__autor-content">
                     <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="60" height="60">
+                      <source type="image/webp" srcset="img/reviews-autor-2.webp 1x, img/reviews-autor-2@2x.jpg 2x"
+                        width="90" height="90">
                       <source media="(max-width: 767px)" width="60" height="60">
                       <img src="img/reviews-autor-2.jpg" srcset="img/reviews-autor-2@2x.jpg 2x" width="90" height="90"
                         alt="Фотография пользователя.">
@@ -890,6 +984,9 @@
                 <div class="reviews-slide__info-wrapper">
                   <div class="reviews-slide__autor-content">
                     <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="60" height="60">
+                      <source type="image/webp" srcset="img/reviews-autor-2.webp 1x, img/reviews-autor-2@2x.jpg 2x"
+                        width="90" height="90">
                       <source media="(max-width: 767px)" width="60" height="60">
                       <img src="img/reviews-autor-2.jpg" srcset="img/reviews-autor-2@2x.jpg 2x" width="90" height="90"
                         alt="Фотография пользователя.">
@@ -954,6 +1051,12 @@
             </ul>
           </div>
           <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x" width="290" height="240">
+            <source type="image/webp" media="(max-width: 1439px)"
+              srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x" width="678" height="500">
+            <source type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x" width="1240"
+              height="500">
             <source media="(max-width: 767px)" srcset="img/map-mobile.jpg 1x, img/map-mobile@2x.jpg 2x" width="290"
               height="240">
             <source media="(max-width: 1439px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x" width="678"
@@ -967,25 +1070,25 @@
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <div class="feedback__container container">
           <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/form-image-mobile.webp 1x, img/form-image-mobile@2x.webp 2x" width="320" height="753">
+            <source type="image/webp" media="(max-width: 1439px)"
+              srcset="img/form-image-tablet.webp 1x, img/form-image-tablet@2x.webp 2x" width="678" height="780">
+            <source type="image/webp" srcset="img/form-image-desktop.webp 1x, img/form-image-desktop@2x.webp 2x"
+              width="1240" height="803">
             <source media="(max-width: 767px)" srcset="img/form-image-mobile.jpg 1x, img/form-image-mobile@2x.jpg 2x"
               width="320" height="753">
             <source media="(max-width: 1439px)" srcset="img/form-image-tablet.jpg 1x, img/form-image-tablet@2x.jpg 2x"
               width="678" height="780">
             <img src="img/form-image-desktop.jpg" srcset="img/form-image-desktop@2x.jpg 2x" width="1240" height="803"
-              alt="">
+              alt="Панорама города.">
           </picture>
           <div class="feedback__wrapper">
-            <button class="modal__close-button" type="button">
-              <svg width="22" height="22" role="img">
-                <use href="__spritemap#sprite-close-icon"></use>
-              </svg>
-              <span class="visually-hidden">Закрыть окно</span>
-            </button>
             <h3 class="feedback__title">Напишите нам</h3>
             <p class="feedback__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!
             </p>
             <div data-form-validate data-callback="base">
-              <form action="https://echo.htmlacademy.ru" method="post">
+              <form action="https://echo.htmlacademy.ru" method="post" data-form-feedback="form">
                 <div class="custom-input" data-required data-validate-type="text">
                   <label>
                     <span>Имя</span>
@@ -1004,24 +1107,11 @@
                     <textarea name="message" required autocomplete="off"></textarea>
                   </label>
                 </div>
-                <!-- <label>
-                  <span>Выберете город</span>
-                  <select required>
-                    <option value="" selected></option>
-                    <option>Санкт-Петербург</option>
-                    <option>Санкт-Петербург</option>
-                    <option>Санкт-Петербург</option>
-                    <option>Санкт-Петербург</option>
-                  </select>
-                </label> -->
                 <div class="custom-select" data-select data-name="city" data-validate-type="select" data-required>
                   <span class="custom-select__label">Выберете город</span>
                   <button class="custom-select__button" type="button">
                     <span class="custom-select__text"></span>
                     <span class="custom-select__icon">
-                      <!-- <svg width="16" height="16" role="img">
-                        <use href="__spritemap#sprite-arrow-down-icon"></use>
-                      </svg> -->
                     </span>
                   </button>
                   <ul class="custom-select__list" role="listbox">
@@ -1133,8 +1223,8 @@
           <p class="feedback__description feedback__description--modal">Оставьте ваши контакты, если у вас остались
             вопросы — мы на них ответим!
           </p>
-          <div data-form-validate data-callback="base">
-            <form action="https://echo.htmlacademy.ru" method="post">
+          <div data-form-validate data-callback="modal">
+            <form action="https://echo.htmlacademy.ru" method="post" data-form-feedback="modal">
               <div class="custom-input custom-input--modal" data-required data-validate-type="text">
                 <label>
                   <span>Имя</span>
@@ -1153,9 +1243,6 @@
                 <button class="custom-select__button custom-select__button--modal" type="button">
                   <span class="custom-select__text custom-select__text--modal"></span>
                   <span class=" custom-select__icon custom-select__icon--modal">
-                    <!-- <svg width="16" height="16" role="img">
-                      <use href="__spritemap#sprite-arrow-down-icon"></use>
-                    </svg> -->
                   </span>
                 </button>
                 <ul class="custom-select__list custom-select__list--modal" role="listbox">
