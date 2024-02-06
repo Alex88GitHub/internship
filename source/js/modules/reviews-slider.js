@@ -19,9 +19,6 @@ export const reviewsSlider = () => {
     },
 
     breakpoints: {
-      320: {
-
-      },
       768: {
         slidesPerView: 'auto',
         spaceBetween: 30,

@@ -23,12 +23,6 @@ export const heroSlider = () => {
     },
 
     breakpoints: {
-      320: {
-
-      },
-      768: {
-
-      },
       1440: {
         allowTouchMove: false,
       },
