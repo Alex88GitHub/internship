@@ -14,13 +14,16 @@ export const programsSlider = () => {
     },
     scrollbar: {
       el: scrollbar,
-      draggable: false,
+      draggable: true,
     },
-
     breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 15,
+      1440: {
+        slidesPerView: 3,
+        allowTouchMove: false,
+        spaceBetween: 32,
+        scrollbar: {
+          dragSize: '392',
+        },
       },
       768: {
         slidesPerView: 'auto',
@@ -29,13 +32,9 @@ export const programsSlider = () => {
           dragSize: '324',
         },
       },
-      1440: {
-        slidesPerView: 3,
-        allowTouchMove: false,
-        spaceBetween: 32,
-        scrollbar: {
-          dragSize: '392',
-        },
+      320: {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
       },
     },
   });

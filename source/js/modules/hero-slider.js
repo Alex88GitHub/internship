@@ -7,9 +7,9 @@ export const heroSlider = () => {
     observer: true,
     loop: true,
     autoHeight: true,
-    autoplay: {
-      delay: 3000,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    // },
     pagination: {
       el: '.swiper-slide-active [data-slider="hero-pagination"]',
       clickable: true,

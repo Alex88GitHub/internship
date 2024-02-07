@@ -22,11 +22,11 @@ export const newsSlider = () => {
     },
     slidesPerView: 'auto',
     breakpoints: {
-      320: {
-        spaceBetween: 20,
+      1440: {
+        allowTouchMove: false,
+        spaceBetween: 32,
         grid: {
-          rows: 2,
-          fill: 'column',
+          rows: 1,
         },
       },
       768: {
@@ -35,11 +35,11 @@ export const newsSlider = () => {
           rows: 2,
         },
       },
-      1440: {
-        allowTouchMove: false,
-        spaceBetween: 32,
+      320: {
+        spaceBetween: 20,
         grid: {
-          rows: 1,
+          rows: 2,
+          fill: 'column',
         },
       },
     },

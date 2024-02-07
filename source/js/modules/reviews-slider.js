@@ -15,19 +15,29 @@ export const reviewsSlider = () => {
     },
     scrollbar: {
       el: scrollbar,
-      draggable: false,
+      draggable: true,
     },
 
     breakpoints: {
+      1440: {
+        slidesPerView: 2,
+        allowTouchMove: false,
+        spaceBetween: 32,
+        scrollbar: {
+          dragSize: 392,
+        },
+      },
       768: {
         slidesPerView: 'auto',
         spaceBetween: 30,
+        scrollbar: {
+          dragSize: 324,
+        },
       },
-      1440: {
-        slidesPerView: 'auto',
-        allowTouchMove: false,
-        spaceBetween: 32,
-      },
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+      }
     },
   });
   return slider;
